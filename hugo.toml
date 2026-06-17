@@ -1,0 +1,20 @@
+baseURL = "https://dmstudioltd.github.io/Oh-Joon/"
+title = "Visual Center Lab"
+theme = "paper"
+paginate = 20
+
+[params]
+  color = "linen"
+  github = "DMStudioLtd/Oh-Joon"
+  subtitle = "주식회사 비주얼센터 · 기술 리서치 보고서"
+  mainSections = ["posts"]
+
+[params.comments]
+  enabled = false
+
+[markup]
+  [markup.highlight]
+    style = "monokailight"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

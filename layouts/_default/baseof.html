@@ -1,0 +1,38 @@
+<!doctype html>
+
+{{- $.Scratch.Delete "bg_color" -}}
+{{- $.Scratch.Delete "social_list" -}}
+{{- $.Scratch.Delete "avatar_url" -}}
+
+{{- $.Scratch.Set "bg_color" "#fff" -}}
+{{- $bg_color := $.Scratch.Get "bg_color" -}}
+
+{{- $social_params := slice "twitter" "github" "instagram" "linkedin" "mastodon"
+"threads" "bluesky" "rss" -}}
+{{- range $social_params -}}
+{{- if isset site.Params . -}}
+{{- $.Scratch.Add "social_list" (slice .) -}}
+{{- end -}}
+{{- end -}}
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: {{- $bg_color -}}"
+  lang="ko"
+  dir="ltr"
+>
+  {{- partial "head.html" . -}}
+  <body
+    class="bg-(--bg) text-black antialiased duration-200 ease-out [-webkit-tap-highlight-color:transparent] dark:text-white"
+  >
+    {{- partial "header.html" . -}}
+
+    <main
+      class="prose prose-neutral dark:prose-invert relative mx-auto min-h-[calc(100vh-9rem)] max-w-(--w) px-8 pb-16 {{ if .IsHome }}pt-0{{ else }}pt-14{{ end }}"
+    >
+      {{- block "main" . -}}{{- end -}}
+    </main>
+
+    {{- partial "footer.html" . -}}
+  </body>
+</html>

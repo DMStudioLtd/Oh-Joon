@@ -1,0 +1,64 @@
+{{- define "main" -}}
+
+{{- if .IsHome -}}
+<!-- ═══ COVER HERO ═══ -->
+<div class="home-cover not-prose">
+  <div class="eyebrow">Visual Center Lab · Research &amp; Technology Reports</div>
+  <h1>Visual Center<br/>Lab</h1>
+  <p class="subtitle">주식회사 비주얼센터 — 기술 리서치 보고서 아카이브</p>
+  <p class="thesis">실감형 VR 돔 시스템, 프로젝션 매핑, 미디어 아트 기술에 대한 글로벌 시장 분석과 도입 검토 보고서를 체계적으로 축적하는 기술 연구 블로그.</p>
+
+  <div class="snapshot-bar">
+    <div class="m"><b>{{ len (where site.RegularPages "Type" "in" site.Params.mainSections) }}</b><span>발행 보고서</span></div>
+    <div class="m"><b>{{ len site.Taxonomies.tags }}</b><span>연구 태그</span></div>
+    <div class="m"><b>Hugo</b><span>정적 사이트 엔진</span></div>
+    <div class="m"><b>2026</b><span>시작 연도</span></div>
+  </div>
+</div>
+
+<!-- ═══ POST LIST ═══ -->
+<div class="not-prose">
+  <div class="post-list-heading">All Reports</div>
+
+  {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
+  {{- range $pages -}}
+  <a class="post-entry" href="{{- .Permalink -}}">
+    <div class="pe-date">{{- .Date | time.Format "2006.01.02" -}}</div>
+    <div class="pe-title">{{- .Title -}}</div>
+    {{- with .Params.summary -}}
+    <div class="pe-desc">{{- . -}}</div>
+    {{- end -}}
+    {{- with .Params.tags -}}
+    <div class="pe-tags">
+      {{- range . -}}
+      <span class="pe-tag">{{- . -}}</span>
+      {{- end -}}
+    </div>
+    {{- end -}}
+  </a>
+  {{- end -}}
+</div>
+
+{{- else -}}
+
+<!-- Tag/Section List -->
+{{- if and .Title (eq .Type "tags") -}}
+<h1 class="mb-14">#{{- .Title -}}</h1>
+{{- end -}}
+
+{{- $pages := union .RegularPages .Sections -}}
+{{- range $pages -}}
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  <h2 class="my-0!">{{- .Title -}}</h2>
+  <time class="text-xs antialiased opacity-60"
+    >{{- .Date | time.Format ":date_medium" -}}</time
+  >
+  <a class="absolute inset-0 text-[0px]" href="{{- .Permalink -}}"
+    >{{- .Title -}}</a
+  >
+</section>
+{{- end -}}
+
+{{- end -}}
+
+{{- end -}}

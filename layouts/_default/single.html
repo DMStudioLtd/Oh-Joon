@@ -1,0 +1,68 @@
+{{- define "main" -}}
+
+<article>
+  <header class="mb-14" style="padding-top:24px; border-bottom:2px solid #0A1628; padding-bottom:24px;">
+    {{- if ne .Type "page" -}}
+    <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.3em; color:#7A8698; font-weight:700; margin-bottom:16px; text-transform:uppercase;">
+      REPORT · {{- .Date | time.Format "2006.01.02" -}}
+      {{- with .Params.tags }} · {{ range $i, $t := . }}{{ if $i }} · {{ end }}{{ $t }}{{ end }}{{ end -}}
+    </div>
+    {{- end -}}
+
+    <h1 class="my-0! pb-2.5" style="font-size:clamp(28px,5vw,42px); font-weight:900; line-height:1.15; letter-spacing:-.035em;">{{- .Title -}}</h1>
+
+    {{- if ne .Type "page" -}}
+    <div style="font-size:15px; color:#4A5668; margin-top:12px; font-family:'Noto Sans KR',sans-serif;">
+      {{- with .Params.summary -}}{{- . -}}{{- end -}}
+    </div>
+    <div style="font-size:13px; color:#7A8698; margin-top:16px; font-family:'Noto Sans KR',sans-serif;">
+      {{- $single_author := or .Params.author site.Params.author -}}
+      {{- if $single_author -}}
+      작성: {{- $single_author -}}
+      {{- end -}}
+    </div>
+    {{- end -}}
+  </header>
+
+  <section>{{- .Content -}}</section>
+
+  {{- if .Params.tags -}}
+  <footer class="mt-12 flex flex-wrap" style="padding-top:24px; border-top:1px solid #D8DDE8;">
+    {{- range .Params.tags -}} {{- $href := print (absURL "tags/") (urlize .)
+    -}}
+    <a
+      style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; border:1px solid #D8DDE8; padding:4px 10px; border-radius:3px; margin-right:6px; margin-bottom:6px; text-decoration:none; color:#7A8698;"
+      href="{{- $href -}}"
+      >{{- . -}}</a
+    >
+    {{- end -}}
+  </footer>
+  {{- end -}}
+
+  {{- if not site.Params.disablePostNavigation -}}
+  {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections -}}
+  {{- if and (gt (len $pages) 1) (in $pages . ) -}}
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl text-lg leading-[1.2]! *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline"
+    style="border:1px solid #D8DDE8;"
+  >
+    {{- with $pages.Next . -}}
+    <a class="ltr:pr-3 rtl:pl-3" href="{{- .Permalink -}}"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>{{- .Name -}}</span></a
+    >
+    {{- end -}}
+    {{- with $pages.Prev . -}}
+    <a
+      class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
+      href="{{- .Permalink -}}"
+      ><span>{{- .Name -}}</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    >
+    {{- end -}}
+  </nav>
+  {{- end -}}
+  {{- end -}}
+
+  {{- partial "mermaid.html" . -}}
+</article>
+
+{{- end -}}

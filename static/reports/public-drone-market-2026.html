@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>7만 대의 드론, 꺼지지 않는 산불 | 한국 공공 드론 시장 종합 인텔리전스</title>
+<meta name="description" content="한국 공공 드론 시장 7개 문의 게이트키퍼, 중국산 88% 종속, K-드론 도미넌스 2조원 기회를 증적 35건 교차검증으로 분석한 종합 인텔리전스 보고서"/>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  --bg: #ffffff;
+  --ink: #0A1628;
+  --ink-80: #2A3648;
+  --ink-60: #4A5668;
+  --ink-40: #7A8698;
+  --ink-20: #B0B8C8;
+  --ink-10: #D8DDE8;
+  --ink-05: #EEF0F5;
+  --ink-02: #F6F7FA;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 17px; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Noto Serif KR', Georgia, 'Times New Roman', serif;
+  line-height: 1.85;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+}
+.page { max-width: 760px; margin: 0 auto; padding: 0 28px 120px; }
+
+/* COVER */
+.cover {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 0 60px;
+  border-bottom: 2px solid var(--ink);
+}
+.cover .eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: var(--ink-60);
+  font-weight: 700;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+.cover h1 {
+  font-size: clamp(38px, 7vw, 62px);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+  margin-bottom: 20px;
+  color: var(--ink);
+}
+.cover .subtitle {
+  font-size: 19px;
+  color: var(--ink-60);
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+.cover .thesis {
+  font-size: 20px;
+  line-height: 1.65;
+  color: var(--ink-80);
+  border-left: 3px solid var(--ink);
+  padding: 18px 24px;
+  margin-left: 0;
+}
+.snapshot-bar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0;
+  background: var(--ink);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 48px 0 0;
+}
+.snapshot-bar .m {
+  padding: 20px 16px;
+  text-align: center;
+  border-right: 1px solid var(--ink-80);
+}
+.snapshot-bar .m:last-child { border-right: 0; }
+.snapshot-bar .m b {
+  display: block;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: 'JetBrains Mono', monospace;
+}
+.snapshot-bar .m span {
+  display: block;
+  font-size: 11px;
+  color: var(--ink-20);
+  margin-top: 6px;
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* NAV */
+.toc {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--ink-10);
+  padding: 10px 0;
+  margin: 0 0 64px;
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.toc a {
+  flex: 0 0 auto;
+  text-decoration: none;
+  color: var(--ink-40);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+.toc a:hover { color: var(--ink); background: var(--ink-05); }
+
+/* TYPOGRAPHY */
+h2.chapter {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 110px 0 14px;
+  padding-top: 48px;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  color: var(--ink);
+  border-top: 1px solid var(--ink-10);
+}
+h2.chapter .ch-num {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  color: var(--ink-40);
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+h3 { font-size: 22px; font-weight: 700; margin: 56px 0 16px; color: var(--ink); line-height: 1.4; }
+h4 { font-size: 18px; font-weight: 700; margin: 36px 0 12px; color: var(--ink-80); }
+p { margin: 0 0 20px; font-size: 17px; color: var(--ink-80); }
+strong { font-weight: 700; color: var(--ink); }
+em { font-style: normal; color: var(--ink-60); }
+
+/* BLOCKQUOTE */
+blockquote {
+  margin: 48px -28px;
+  padding: 40px 48px;
+  background: var(--ink);
+  color: #fff;
+  position: relative;
+}
+blockquote::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: var(--ink-40);
+}
+blockquote p { font-size: 20px; line-height: 1.6; color: rgba(255,255,255,0.92); margin: 0 0 10px; font-weight: 400; }
+blockquote p:last-child { margin-bottom: 0; }
+blockquote em { color: rgba(255,255,255,0.65); }
+blockquote strong { color: #fff; }
+
+hr { border: 0; height: 1px; background: var(--ink-10); margin: 56px 0; }
+ul, ol { padding-left: 28px; margin: 0 0 24px; }
+li { margin: 10px 0; font-size: 16.5px; line-height: 1.75; color: var(--ink-80); }
+
+/* TABLES */
+.table-wrap { overflow-x: auto; margin: 28px 0 36px; border: 1px solid var(--ink-10); border-radius: 6px; }
+table { width: 100%; border-collapse: collapse; font-size: 14.5px; font-family: 'Noto Sans KR', sans-serif; line-height: 1.55; }
+th { background: var(--ink); color: #fff; text-align: left; font-weight: 700; font-size: 13px; letter-spacing: 0.03em; padding: 8px 12px; white-space: nowrap; }
+td { padding: 7px 12px; border-bottom: 1px solid var(--ink-10); vertical-align: top; color: var(--ink-80); }
+td:first-child { white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+tr:nth-child(even) td { background: var(--ink-02); }
+td strong { color: var(--ink); }
+table.compact { font-size: 13px; width: auto; min-width: 100%; }
+table.compact td, table.compact th { white-space: nowrap; padding: 6px 10px; }
+
+/* PRE/CODE */
+pre {
+  background: var(--ink);
+  color: var(--ink-20);
+  font-family: 'JetBrains Mono', monospace;
+  border-radius: 6px;
+  padding: 24px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 28px 0 36px;
+  white-space: pre;
+}
+
+/* FIGURES */
+.figure { margin: 44px 0 52px; border: 1px solid var(--ink-10); border-radius: 6px; padding: 32px; }
+.figure .fig-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: var(--ink-40); font-weight: 700; margin-bottom: 12px; text-transform: uppercase; }
+.figure h3 { font-size: 19px; margin: 0 0 24px; color: var(--ink); }
+.figure .caption { font-size: 14px; color: var(--ink-60); margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--ink-10); font-family: 'Noto Sans KR', sans-serif; line-height: 1.6; }
+
+/* SEVEN GATES */
+.gates-flow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0;
+  margin: 24px 0;
+  border: 1px solid var(--ink-10);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.gate-card {
+  padding: 20px 10px;
+  text-align: center;
+  border-right: 1px solid var(--ink-10);
+}
+.gate-card:last-child { border-right: 0; }
+.gate-card:nth-child(odd) { background: var(--ink-02); }
+.gate-card .gn {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--ink-40);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+.gate-card b {
+  display: block;
+  font-size: 14px;
+  color: var(--ink);
+  margin: 8px 0 4px;
+}
+.gate-card .amt {
+  display: block;
+  font-size: 16px;
+  color: var(--ink);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  margin: 4px 0;
+}
+.gate-card span {
+  display: block;
+  font-size: 11px;
+  color: var(--ink-60);
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.3;
+}
+
+/* BAR CHART */
+.bar-chart { margin: 24px 0 10px; }
+.bar-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: end;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.bar-label { font-size: 13px; color: var(--ink-60); text-align: right; padding-bottom: 6px; }
+.bar-track { background: var(--ink-05); border-radius: 3px; height: 24px; overflow: hidden; }
+.bar-fill { height: 100%; background: var(--ink); }
+.bar-text { font-size: 13px; font-weight: 700; color: var(--ink); margin-bottom: 4px; white-space: nowrap; }
+
+/* TIMELINE */
+.timeline { position: relative; margin: 30px 0; padding-left: 28px; border-left: 2px solid var(--ink-20); }
+.tl-item { position: relative; padding: 0 0 24px 20px; }
+.tl-item::before {
+  content: '';
+  position: absolute;
+  left: -35px; top: 6px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: var(--ink-20);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--ink-20);
+}
+.tl-item.major::before { width: 14px; height: 14px; left: -37px; top: 4px; background: var(--ink); box-shadow: 0 0 0 2px var(--ink); }
+.tl-year { font-family: 'JetBrains Mono', monospace; font-size: 14px; font-weight: 700; color: var(--ink); }
+.tl-text { font-size: 15px; color: var(--ink-60); font-family: 'Noto Sans KR', sans-serif; }
+
+/* CYCLE DIAGRAM */
+.cycle-box {
+  background: var(--ink);
+  border-radius: 8px;
+  padding: 32px;
+  margin: 28px 0 36px;
+  text-align: center;
+}
+.cycle-box .cycle-arrows {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  color: var(--ink-20);
+  line-height: 2;
+}
+.cycle-box .cycle-arrows strong { color: #fff; }
+
+/* FOOTER */
+.source-note {
+  margin-top: 80px;
+  border-top: 1px solid var(--ink-10);
+  padding-top: 20px;
+  color: var(--ink-40);
+  font-size: 13px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .page { padding: 0 18px 80px; }
+  .cover h1 { font-size: 30px; }
+  .snapshot-bar { grid-template-columns: repeat(3, 1fr); }
+  .snapshot-bar .m { border-right: 1px solid var(--ink-80); border-bottom: 1px solid var(--ink-80); }
+  .gates-flow { grid-template-columns: 1fr 1fr; }
+  .gate-card { border-bottom: 1px solid var(--ink-10); }
+  h2.chapter { font-size: 26px; }
+  table { font-size: 13px; }
+  th, td { padding: 10px 12px; }
+  blockquote { margin: 40px -18px; padding: 28px 24px; }
+}
+@media print {
+  @page { size: A4; margin: 20mm; }
+  body { background: #fff; font-size: 10pt; }
+  .page { max-width: none; padding: 0; }
+  .toc { position: static; display: block; page-break-after: always; }
+  .cover { min-height: auto; page-break-after: always; }
+  .figure, table, pre, blockquote { break-inside: avoid; }
+  h2.chapter { break-after: avoid; }
+  .snapshot-bar { grid-template-columns: repeat(6, 1fr); }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="cover">
+  <div class="eyebrow">INTELLIGENCE REPORT &middot; 2026 &middot; KOREA PUBLIC DRONE MARKET</div>
+  <h1>7만 대의 드론,<br/>꺼지지 않는 산불</h1>
+  <div class="subtitle">한국 공공 드론 시장 종합 인텔리전스 보고서</div>
+  <div style="margin-top:20px;font-family:'Noto Sans KR',sans-serif;font-size:14px;color:var(--ink-60);line-height:1.6;">
+    작성 &middot; <strong style="color:var(--ink);">주식회사 비주얼센터</strong> 권오준<br/>
+    2026년 6월
+  </div>
+  <div class="thesis">2025년 여름, 대한민국 하늘에는 7만 대의 드론이 등록되어 있었다. 같은 해, 산림청은 산불 진화용 드론 45대를 사려고 27억원을 편성했다. 아무도 오지 않았다. 전액 유찰. 한전은 101대의 드론 중 52대를 창고에 방치하고 있었다. 이것이 대한민국 공공 드론 시장의 현주소다. 그리고 바로 여기에, 2조원짜리 기회가 있다.</div>
+  <div class="snapshot-bar">
+    <div class="m"><b>70,725</b><span>등록 드론 (2025.07)</span></div>
+    <div class="m"><b>1조993억</b><span>산업 매출 (2023)</span></div>
+    <div class="m"><b>88%</b><span>농업 융자 중국산</span></div>
+    <div class="m"><b>2조원</b><span>K-드론 도미넌스</span></div>
+    <div class="m"><b>35건</b><span>증적 아카이브</span></div>
+    <div class="m"><b>8개</b><span>시장의 문</span></div>
+  </div>
+</header>
+
+<nav class="toc">
+  <a href="#ch1">I. 지형</a>
+  <a href="#ch2">II. 중국의 그림자</a>
+  <a href="#ch3">III. 7개의 문</a>
+  <a href="#gate1">문1: 농업</a>
+  <a href="#gate2">문2: 소방</a>
+  <a href="#gate3">문3: 산림</a>
+  <a href="#gate4">문4: 경찰</a>
+  <a href="#gate5">문5: 국방</a>
+  <a href="#gate6">문6: 공기업</a>
+  <a href="#gate7">문7: 배송</a>
+  <a href="#ch4">IV. 지각 변동</a>
+  <a href="#ch5">V. 교체의 파도</a>
+  <a href="#ch6">VI. 시장 규모</a>
+  <a href="#ch7">VII. 패턴과 기회</a>
+  <a href="#ch8">VIII. 진입 경로</a>
+  <a href="#ch9">IX. 경쟁 지형</a>
+  <a href="#ch10">X. 여덟 번째 문</a>
+  <a href="#ch11">XI. 결론</a>
+  <a href="#appendix">부록</a>
+  <a href="#dd-report">실사보고서</a>
+  <a href="#evidence-index">파일링크</a>
+</nav>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<h2 class="chapter" id="ch1"><span class="ch-num">CHAPTER I</span>지형 &mdash; 7만 대가 말하는 것</h2>
+
+<p>대한민국의 드론 등록 대수는 2016년 2,226대에서 2025년 7월 <strong>70,725대</strong>로 성장했다. 9년 만에 32배. 연평균 성장률 47%.</p>
+<p>이 숫자가 말하는 첫 번째 사실은 <strong>시장이 존재한다</strong>는 것이다.</p>
+
+<div class="table-wrap"><table>
+<thead><tr><th>연도</th><th>등록기체</th><th>전년 대비</th></tr></thead>
+<tbody>
+<tr><td>2016</td><td>2,226</td><td>&mdash;</td></tr>
+<tr><td>2020</td><td>16,159</td><td>드론법 시행</td></tr>
+<tr><td>2021</td><td>31,314</td><td>+94%</td></tr>
+<tr><td>2023</td><td>52,387</td><td></td></tr>
+<tr><td><strong>2025.07</strong></td><td><strong>70,725</strong></td><td>월 ~1,000대 증가 중</td></tr>
+</tbody>
+</table></div>
+<p><em>[출처: S-42, 한국교통안전공단/보험연구원. CSV 원본(2025.08.31 기준) 71,423대로 교차확인]</em></p>
+
+<p>두 번째 사실은 <strong>돈이 되고 있다</strong>는 것이다. 2023년 기준 한국 드론 산업 전체 매출은 <strong>1조 993억원</strong>. 제작업체 3,935억, 활용업체 7,057억. 종사자 16,753명, 영업 중인 업체 6,075곳. 보험시장만 127.8억원(2024년)으로 2년 새 1.8배가 됐다.</p>
+
+<p>세 번째, 가장 중요한 사실은 <strong>이 시장에서 돈을 벌고 있는 곳이 어디인가</strong>다.</p>
+
+<div class="figure">
+  <div class="fig-label">FIGURE 01 &middot; MARKET BREAKDOWN</div>
+  <h3>활용분야별 매출 &mdash; 농업이 40%를 지배한다</h3>
+  <div class="bar-chart">
+    <div class="bar-row"><div class="bar-label">농업&middot;방제</div><div style="flex:1"><div class="bar-text">1,954억원 (40%)</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></div></div>
+    <div class="bar-row"><div class="bar-label">촬영&middot;레저</div><div style="flex:1"><div class="bar-text">1,361억원 (28%)</div><div class="bar-track"><div class="bar-fill" style="width:70%"></div></div></div></div>
+    <div class="bar-row"><div class="bar-label">측량&middot;탐사</div><div style="flex:1"><div class="bar-text">832억원 (17%)</div><div class="bar-track"><div class="bar-fill" style="width:43%"></div></div></div></div>
+    <div class="bar-row"><div class="bar-label">교육</div><div style="flex:1"><div class="bar-text">571억원 (12%)</div><div class="bar-track"><div class="bar-fill" style="width:29%"></div></div></div></div>
+    <div class="bar-row"><div class="bar-label">기타</div><div style="flex:1"><div class="bar-text">169억원 (3%)</div><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div></div></div>
+  </div>
+  <div class="caption">농업이 전체의 40%를 먹고 있다. 그리고 그 농업 드론의 88%가 DJI다. [출처: S-42]</div>
+</div>
+
+<hr/>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<h2 class="chapter" id="ch2"><span class="ch-num">CHAPTER II</span>중국이라는 그림자</h2>
+
+<p>국정감사 자료가 드러낸 숫자는 충격적이다. 정희용 의원실이 확보한 5년간(2021~2025.8) 농업드론 융자 데이터:</p>
+
+<div class="table-wrap"><table>
+<thead><tr><th>연도</th><th>전체 융자</th><th>중국산</th><th>중국산 비율</th></tr></thead>
+<tbody>
+<tr><td>2021</td><td>23.2억</td><td>18.1억</td><td>78%</td></tr>
+<tr><td>2022</td><td>37.5억</td><td>32.2억</td><td>86%</td></tr>
+<tr><td>2023</td><td>44.7억</td><td>38.7억</td><td>87%</td></tr>
+<tr><td>2024</td><td>47.7억</td><td>40.5억</td><td>85%</td></tr>
+<tr><td><strong>5년 합계</strong></td><td><strong>200.8억</strong></td><td><strong>177.2억</strong></td><td><strong>88.2%</strong></td></tr>
+</tbody>
+</table></div>
+<p><em>[출처: S-07 정희용 의원실, S-06 서천호 의원실]</em></p>
+
+<p>5년간 <strong>177억원의 정부 지원금</strong>이 중국산 드론 구매에 쓰였다. 매년 30~40억원씩, 대한민국의 세금이 DJI Agras를 사는 데 흘러들어간 것이다.</p>
+
+<p>서천호 의원실 자료는 더 불편한 진실을 보여준다. &ldquo;국산&rdquo;이라 분류된 81개 모델 중 <strong>국산화율 80% 이상은 단 9개(11.1%)</strong>. 국산화율 20% 미만이 16개(19.8%). &ldquo;국산&rdquo;이라는 이름표 뒤에 중국산 부품이 가득하다.</p>
+
+<p>이병진 의원실 자료에 따르면 전국 농업드론 보유 대수는 2024년 기준 <strong>2,910대</strong>. 4년 만에 149% 증가했다. 전남이 833대(28.6%)로 압도적 1위, 경북 344대, 충남 298대 순이다. 이 2,910대의 80~90%가 DJI다.</p>
+
+<blockquote>
+<p><strong>미국은 이미 DJI를 FCC Covered List에 등재했다(2025.12).</strong></p>
+<p>한국에는 아직 법적 제한이 없다. 하지만 K-드론 도미넌스가 &ldquo;국산화&rdquo;를 전면에 내세운 것은 우연이 아니다.</p>
+</blockquote>
+
+<hr/>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<h2 class="chapter" id="ch3"><span class="ch-num">CHAPTER III</span>일곱 개의 문</h2>
+
+<p>한국의 공공 드론 시장은 하나의 시장이 아니다. <strong>7개의 서로 다른 문</strong>이 있고, 각 문에는 각각의 <strong>게이트키퍼</strong>가 서 있다.</p>
+
+<div class="figure">
+  <div class="fig-label">FIGURE 02 &middot; SEVEN GATES</div>
+  <h3>7개의 문 &mdash; 한국 공공 드론 시장의 전체 지형</h3>
+  <div class="gates-flow">
+    <div class="gate-card"><span class="gn">01</span><b>농업</b><div class="amt">200~340억</div><span>KAMICO</span></div>
+    <div class="gate-card"><span class="gn">02</span><b>소방</b><div class="amt">50~80억</div><span>소방청+나라장터</span></div>
+    <div class="gate-card"><span class="gn">03</span><b>산림</b><div class="amt">37억+</div><span>산림항공본부</span></div>
+    <div class="gate-card"><span class="gn">04</span><b>경찰</b><div class="amt">32억</div><span>경찰청 장비과</span></div>
+    <div class="gate-card"><span class="gn">05</span><b>국방</b><div class="amt">1,814억</div><span>방위사업청</span></div>
+    <div class="gate-card"><span class="gn">06</span><b>공기업</b><div class="amt">수십억</div><span>각 사 자체조달</span></div>
+    <div class="gate-card"><span class="gn">07</span><b>배송</b><div class="amt">113억</div><span>국토부+KIAST</span></div>
+  </div>
+  <div class="caption">현재 합산 최소 2,000~3,000억/년. K-드론 도미넌스 이후 연 4,000억원 전망. 각 문의 게이트키퍼를 통과해야만 시장에 진입할 수 있다.</div>
+</div>
+
+<!-- GATE 1 -->
+<h3 id="gate1">문 1. 농업 &mdash; 연 200~340억원</h3>
+<h4>게이트키퍼: KAMICO(한국농기계공업협동조합)</h4>
+
+<p>이 시장에서 가장 먼저 알아야 할 이름이 있다. <strong>KAMICO</strong>. 한국농기계공업협동조합. KAMICO가 반기마다 발행하는 <strong>정부지원 농업기계 목록집</strong>에 기종이 등재되지 않으면, 융자 대상이 될 수 없다. 융자 대상이 안 되면, 농업인이 살 수 없다. 사실상 <strong>시장 진입의 첫 관문</strong>이다.</p>
+
+<pre>KAMICO 목록 등재 → 융자 대상 자격
+      ↓
+농식품부 → 도청 → 시군 농업기술센터 → 보조금·융자 배정
+      ↓
+농업인 → 지역농협 → 대출 실행 → 기종 구매
+      ↓
+KAMICO 사후관리 확인 → A/S 보증</pre>
+
+<div class="table-wrap"><table>
+<thead><tr><th>채널</th><th>연간 규모</th><th>근거</th></tr></thead>
+<tbody>
+<tr><td>농협 융자</td><td><strong>50~60억</strong></td><td>2024년 47.7억, 증가 추세</td></tr>
+<tr><td>지자체 보조금</td><td><strong>30~50억</strong></td><td>진천(보조70%), 보령(개인2천만) 등</td></tr>
+<tr><td>자체구매&middot;임대사업소</td><td><strong>20~30억</strong></td><td>148개 시군, 475개 임대사업소</td></tr>
+<tr><td>공동방제 서비스</td><td><strong>100~200억</strong></td><td>ha당 12~30만원 &times; 전국 규모</td></tr>
+<tr><td><strong>합계</strong></td><td><strong>200~340억</strong></td><td></td></tr>
+</tbody>
+</table></div>
+<p><em>[출처: S-07, S-36, S-22~26 교차 산출]</em></p>
+
+<p>방제 서비스 시장의 잠재력은 더 크다. 전국 벼 재배면적 70만ha, ha당 평균 15~20만원이면 <strong>연간 1,050~1,400억원</strong> 규모다.</p>
+
+<!-- GATE 2 -->
+<h3 id="gate2">문 2. 소방 &mdash; 연 50~80억원</h3>
+<h4>게이트키퍼: 소방청 장비총괄과 + 나라장터</h4>
+
+<p>전국 소방드론 <strong>694대</strong>. 임무용 547대, 교육용 147대. 2024년 출동 <strong>4,623건</strong>, 3년 만에 2.7배 증가.</p>
+<p>숫자만 보면 활발해 보인다. 그러나 694대로 4,623건이면 <strong>1대당 연 6.7회 출동</strong>. 2주에 한 번도 쓰지 않는다. 기종 분포를 보면 답이 나온다:</p>
+
+<div class="figure">
+  <div class="fig-label">FIGURE 03 &middot; FIRE DRONE BREAKDOWN</div>
+  <h3>소방드론 694대의 기종 분포 &mdash; 65%가 2kg 이하 소형</h3>
+  <div class="bar-chart">
+    <div class="bar-row"><div class="bar-label">4종 (~2kg)</div><div style="flex:1"><div class="bar-text">451대 &mdash; 65%</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></div></div>
+    <div class="bar-row"><div class="bar-label">3종 (2~7kg)</div><div style="flex:1"><div class="bar-text">160대 &mdash; 23%</div><div class="bar-track"><div class="bar-fill" style="width:35%"></div></div></div></div>
+    <div class="bar-row"><div class="bar-label">2종 (7~25kg)</div><div style="flex:1"><div class="bar-text">72대 &mdash; 10%</div><div class="bar-track"><div class="bar-fill" style="width:16%"></div></div></div></div>
+    <div class="bar-row"><div class="bar-label">1종 (25kg+)</div><div style="flex:1"><div class="bar-text">11대 &mdash; 1.6%</div><div class="bar-track"><div class="bar-fill" style="width:2.4%"></div></div></div></div>
+  </div>
+  <div class="caption">전체의 65%가 정찰·촬영용 소형. 실질적 임무(물자 운반·진화) 수행 가능한 고중량은 83대(12%)뿐. 전담인력은 전국 54명. [출처: S-38 박정현 의원실]</div>
+</div>
+
+<p><strong>소방장비관리법이 개정됐다</strong>(2026.05 국무회의 의결). 첨단 소방장비에 대해 <strong>선행구매→성능평가→시범운영</strong> 3단계 검증체계가 법제화됐다. 최저가 입찰에서 <strong>성능 중심</strong>으로 전환된다. 국토부는 고중량 소방드론 국산개발에 <strong>115억원</strong>(3년)을 투입하고 있다. 이 문은 이제 막 열리기 시작했다.</p>
+
+<!-- GATE 3 -->
+<h3 id="gate3">문 3. 산림 &mdash; 37억원, 그러나 아무도 오지 않았다</h3>
+<h4>게이트키퍼: 산림청 산림항공본부</h4>
+
+<p>2025년 추경으로 산림청에 <strong>4,407억원</strong>이 편성됐다. 이 중 드론 관련: 고성능드론 45대 <strong>27억원</strong>(대당 6,000만원), 일반드론 12대 <strong>5억원</strong>, 중고도드론 1대 <strong>5.17억원</strong>, 드론차량 15대 <strong>36억원</strong>.</p>
+
+<blockquote>
+<p><strong>결과: 전부 유찰. 전액 미집행.</strong></p>
+<p><em>&ldquo;성능 대비 단가가 너무 낮아 업체가 오지 않는다. 시장조사가 부실하다.&rdquo;</em> &mdash; 송옥주 의원, 국정감사</p>
+</blockquote>
+
+<p>대당 6,000만원으로 고성능 산불 진화 드론을 납품할 업체가 없다. 시장가격과 조달가격 사이의 괴리. 유찰이 반복될수록, 현실적인 대안을 가진 업체에게는 기회가 된다.</p>
+<p><em>[출처: S-39 송옥주 의원, S-40 산림청 추경]</em></p>
+
+<!-- GATE 4 -->
+<h3 id="gate4">문 4. 경찰 &mdash; 32억원, 가장 빠르게 성장 중</h3>
+<h4>게이트키퍼: 경찰청 과학수사과·장비과</h4>
+
+<p>2025년 경찰 드론 예산 <strong>32억원</strong>. 전년 20억 대비 <strong>57% 증액</strong>. 신규 구매 47대, 전년 23대의 2배. 2024년 실적: 실종자 수색 <strong>577건</strong>, 발견 <strong>43명</strong>.</p>
+<p>경찰은 가장 적극적으로 움직이고 있다. 기아 PV5 기반 <strong>E순찰차</strong> &mdash; 차량 상부에 드론스테이션, AI카메라 3대, 77종 객체 식별. 2026년 봄 서울 서남권 배치 예정. 2024년 개인정보보호법 개정으로 <strong>치안 목적 드론 운용이 합법화</strong>됐다.</p>
+<p><em>[출처: S-41, 2026년_경찰청_예산개요.pdf]</em></p>
+
+<!-- GATE 5 -->
+<h3 id="gate5">문 5. 국방 &mdash; 330억 + 1,484억원</h3>
+<h4>게이트키퍼: 방위사업청 + 국방기술품질원</h4>
+
+<p>가장 큰 문이다.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>구분</th><th>2026년 예산</th></tr></thead>
+<tbody>
+<tr><td>50만 드론전사 (전력화)</td><td><strong>330억원</strong> (전년 205억→330억)</td></tr>
+<tr><td>방위력개선 드론 (R&D)</td><td><strong>1,484억원</strong></td></tr>
+</tbody>
+</table></div>
+<p>교육용 드론 <strong>11,184대</strong>, 대당 260만원. 6종 핵심부품 국산화(FC, GPS, 모터, 배터리, 조종기, 카메라). <strong>트랜시버(무선 송수신기)는 국내 생산이 전무</strong>하다. 규모가 크지만 진입 장벽도 가장 높다. 그러나 국산화 압력이 가장 강한 곳이기도 하다.</p>
+<p><em>[출처: S-17, S-19]</em></p>
+
+<!-- GATE 6 -->
+<h3 id="gate6">문 6. 공기업 &mdash; 미집계, 수십억 추정</h3>
+<h4>게이트키퍼: 각 사 자체 조달</h4>
+
+<p>한전 사례가 전형적 패턴을 보여준다:</p>
+
+<blockquote>
+<p>드론 101대 보유, 8억원 투입. 89대가 중국산. 조종 자격 보유자 전국 <strong>16명</strong>. <strong>52대 유휴.</strong> 8,800만원짜리 수소드론은 1년째 방치.</p>
+</blockquote>
+
+<p>조달청 감사 자료(안도걸 의원)에 따르면, 여러 공공기관에서 총 <strong>2.25억원어치 드론 5기</strong>가 방치·폐기됐다. 내용연수 4년. 대구경찰청은 드론 1대를 1회 사용 후 폐기했다. <strong>1회 비행에 100만원.</strong></p>
+<p><em>[출처: S-30 안도걸 의원, 조달청]</em></p>
+
+<!-- GATE 7 -->
+<h3 id="gate7">문 7. 드론배송·스마트시티 &mdash; 113억원</h3>
+<h4>게이트키퍼: 국토부 항공정책실 + 항공안전기술원</h4>
+
+<p>2025년 K-드론배송: 23개 지자체, 166개 지역, <strong>5,236회</strong> 배송(전년 대비 75% 증가). 드론실증도시 사업에 <strong>113억원</strong>(14개 지자체) 투입. 그러나 이건태 의원(국감)의 지적: 2,996건 배송에 매출 <strong>1.01억원</strong>. 지자체당 하루 1건. <strong>113억 투자 대비 매출 1억.</strong></p>
+<p><em>[출처: S-34 이건태 의원, S-15]</em></p>
+
+<hr/>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<h2 class="chapter" id="ch4"><span class="ch-num">CHAPTER IV</span>지각 변동 &mdash; K-드론 도미넌스</h2>
+
+<p>2026년 6월, 국무총리실이 발표한 <strong>K-드론 도미넌스</strong>. 5년간 <strong>2조원</strong> 공공수요 창출. 이것은 단순한 예산이 아니다. <strong>구조가 바뀐다.</strong></p>
+
+<div class="table-wrap"><table>
+<thead><tr><th>변화</th><th>이전</th><th>이후</th></tr></thead>
+<tbody>
+<tr><td><strong>조달 기준</strong></td><td>최저가 입찰</td><td><strong>성능 중심 평가</strong></td></tr>
+<tr><td><strong>국산화</strong></td><td>구호</td><td><strong>이윤율 25% 보장</strong> + 하자보수 2년</td></tr>
+<tr><td><strong>인증</strong></td><td>없음</td><td><strong>K-MOSA 표준화</strong>, Green/Blue-UAS</td></tr>
+<tr><td><strong>추진 체계</strong></td><td>부처별 산발</td><td><strong>총리실 예하 전략추진단</strong></td></tr>
+<tr><td><strong>교육·자격</strong></td><td>4종류</td><td><strong>신설 확대</strong></td></tr>
+</tbody>
+</table></div>
+<p><em>[출처: S-15, S-19]</em></p>
+
+<blockquote>
+<p><strong>현재 연 250~420억원 → K-드론 정책 시 연 4,000억원. 10배 확대.</strong></p>
+</blockquote>
+
+<hr/>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<h2 class="chapter" id="ch5"><span class="ch-num">CHAPTER V</span>교체의 파도</h2>
+
+<p>모든 데이터가 하나의 타이밍을 가리키고 있다. 조달청 드론 내용연수: <strong>4년</strong>.</p>
+<p>2020~2021년은 드론법 시행과 코로나 비대면 수요가 맞물려 <strong>폭발적 도입기</strong>였다. 2년 동안 2만 대 이상이 새로 등록됐다. 이 장비들의 내용연수가 2024~2025년에 만료된다.</p>
+
+<div class="figure">
+  <div class="fig-label">FIGURE 04 &middot; REPLACEMENT WAVE</div>
+  <h3>2025~2027: 세 가지 파도가 동시에 온다</h3>
+  <div class="timeline">
+    <div class="tl-item major"><span class="tl-year">2020~2021</span> <span class="tl-text">드론법 시행 + 코로나 비대면 → 2만대+ 대량 도입</span></div>
+    <div class="tl-item"><span class="tl-year">2024</span> <span class="tl-text">대전소방 2020년 도입 장비로 출동 14건 (노후화)</span></div>
+    <div class="tl-item major"><span class="tl-year">2025~2026</span> <span class="tl-text">내용연수 4년 만료 → 교체 수요 폭증</span></div>
+    <div class="tl-item major"><span class="tl-year">2026 하반기</span> <span class="tl-text">K-드론 도미넌스 예산 본격 집행</span></div>
+    <div class="tl-item major"><span class="tl-year">2026 하반기</span> <span class="tl-text">소방장비관리법 하위법령 시행</span></div>
+    <div class="tl-item"><span class="tl-year">2027</span> <span class="tl-text">산림청 100kg급 에어로졸 드론 실전 도입 목표</span></div>
+  </div>
+  <div class="caption">교체 파도 + 정책 파도 + 법제 파도가 2025~2027년에 동시 도래. 이 시점이 진입의 최적 타이밍이다.</div>
+</div>
+
+<hr/>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<h2 class="chapter" id="ch6"><span class="ch-num">CHAPTER VI</span>시장 전체 규모</h2>
+
+<p>7개 문에서 흐르는 돈을 합산한다:</p>
+
+<div class="table-wrap"><table>
+<thead><tr><th>영역</th><th>현재 연간 규모</th><th>성장 방향</th></tr></thead>
+<tbody>
+<tr><td>농업</td><td>200~340억</td><td>K-드론 정책 확대</td></tr>
+<tr><td>소방</td><td>50~80억</td><td>소방장비관리법 급증</td></tr>
+<tr><td>산림</td><td>37억+</td><td>대형산불 반복, 예산 증액</td></tr>
+<tr><td>경찰</td><td>32억</td><td>연 57% 증액, AI순찰차</td></tr>
+<tr><td>국방</td><td>330억 + 1,484억(R&D)</td><td>50만 드론전사, 매년 증액</td></tr>
+<tr><td>공기업</td><td>수십억 (미집계)</td><td>AI+드론 시설점검 확대</td></tr>
+<tr><td>배송·스마트시티</td><td>113억 (실증)</td><td>전국 확대 중</td></tr>
+<tr><td><strong>현재 합계</strong></td><td><strong>최소 2,000~3,000억/년</strong></td><td></td></tr>
+<tr><td><strong>K-드론 이후</strong></td><td><strong>~4,000억/년</strong></td><td><strong>5년 2조 목표</strong></td></tr>
+</tbody>
+</table></div>
+
+<hr/>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<h2 class="chapter" id="ch7"><span class="ch-num">CHAPTER VII</span>패턴 &mdash; 그리고 기회</h2>
+
+<p>모든 증적자료를 교차하면, 한국 공공 드론 시장에서 <strong>하나의 패턴</strong>이 반복되고 있다:</p>
+
+<div class="cycle-box">
+  <div class="cycle-arrows">
+    <strong>구매</strong> → 자격 부재 → 운용 실패 → 고장 → A/S 부재 → <strong>방치</strong> → 폐기<br/>
+    └──────────── 4년 후, 같은 사이클 반복 ────────────┘
+  </div>
+</div>
+
+<p>한전의 52대 유휴 드론. 대전 소방의 출동 14건. 대구경찰의 1회 사용 후 폐기. 산림청의 전액 유찰.</p>
+
+<p><strong>공통 원인은 세 가지다:</strong></p>
+<ol>
+  <li><strong>기체만 팔고 끝</strong> &mdash; 교육·운용·데이터 관리가 없다</li>
+  <li><strong>중국산 의존</strong> &mdash; 고장 나면 A/S 지연, 부품 수급 불가</li>
+  <li><strong>전담인력 부재</strong> &mdash; 소방 전담 54명, 한전 자격 보유 16명</li>
+</ol>
+
+<p>이 세 가지를 한꺼번에 해결하는 사업 모델이 하나 있다.</p>
+
+<blockquote>
+<p><strong>DaaS &mdash; Drone-as-a-Service.</strong></p>
+<p>기체 판매가 아니라, <strong>교육 + 운용 + A/S + 데이터 관리</strong>를 패키지로 제공하는 서비스 모델. 드론을 &ldquo;사는&rdquo; 것이 아니라 &ldquo;쓰는&rdquo; 것으로 전환시키는 것.</p>
+<p>이것이 조달청이 지적한 &ldquo;방치·폐기&rdquo; 사이클을 끊는 유일한 방법이다.</p>
+</blockquote>
+
+<hr/>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<h2 class="chapter" id="ch8"><span class="ch-num">CHAPTER VIII</span>진입 경로 &mdash; 실행 로드맵</h2>
+
+<h3>필수 조건 3가지</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>순서</th><th>조건</th><th>상세</th><th>시급도</th></tr></thead>
+<tbody>
+<tr><td><strong>1</strong></td><td><strong>KAMICO 목록집 등재</strong></td><td>신기종 신청 → 심사 → 등재. 미등재 시 융자 시장 접근 불가</td><td>즉시</td></tr>
+<tr><td><strong>2</strong></td><td><strong>농업기계 사후관리업 등록</strong></td><td>업종코드 7268~7270. 나라장터 입찰 참가 자격</td><td>즉시</td></tr>
+<tr><td><strong>3</strong></td><td><strong>조종자 교육 체계 구축</strong></td><td>보령시: &ldquo;조종자 증명 취득자에 한해 지원&rdquo; → 교육+기체 번들</td><td>3개월 내</td></tr>
+</tbody>
+</table></div>
+<p><em>[출처: S-35 KAMICO 게이트키퍼, S-36 융자·보조금 구조, S-37 나라장터]</em></p>
+
+<h3>가격 지형</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>용도</th><th>가격대</th><th>근거</th></tr></thead>
+<tbody>
+<tr><td>개인 방제용</td><td><strong>1,600~2,000만원</strong></td><td>융자 평균 대당 1,639만원</td></tr>
+<tr><td>법인·공동방제용</td><td><strong>3,000~4,000만원</strong></td><td>보령시 법인 한도 4,000만원</td></tr>
+<tr><td>소방(정찰)</td><td><strong>500~3,000만원</strong></td><td>나라장터 실 입찰가</td></tr>
+<tr><td>소방(고중량 진압)</td><td><strong>5,000만원~</strong></td><td>시장 미형성, 선점 기회</td></tr>
+<tr><td>산림(고성능)</td><td><strong>6,000만원~</strong></td><td>산림청 조달 단가 기준</td></tr>
+</tbody>
+</table></div>
+
+<hr/>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<h2 class="chapter" id="ch9"><span class="ch-num">CHAPTER IX</span>경쟁 지형</h2>
+
+<div class="table-wrap"><table>
+<thead><tr><th>업체</th><th>포지션</th><th>규모</th></tr></thead>
+<tbody>
+<tr><td><strong>DJI</strong></td><td>농업·소방·경찰 시장 지배 (80~90%)</td><td>글로벌 1위</td></tr>
+<tr><td>에이럭스(ALUX)</td><td>교육·상용→방산 확장, 코스닥 상장</td><td>매출 650억, 시총 1,967억</td></tr>
+<tr><td>KAI</td><td>유무인복합, 군용 대형</td><td>대기업</td></tr>
+<tr><td>LIG넥스원</td><td>군집자폭형, 수송</td><td>대기업</td></tr>
+<tr><td>두산디지털이노베이션</td><td>수소드론</td><td>중견</td></tr>
+<tr><td>기타 제조</td><td><strong>600+개사</strong></td><td><strong>대부분 연매출 1.7억 이하</strong></td></tr>
+</tbody>
+</table></div>
+
+<p>600개 이상의 제조업체가 있지만, 대부분 연매출 1.7억원 이하의 영세 업체다. DJI를 제외하면 시장이 극도로 파편화되어 있다. FCC Covered List 등재, K-드론 도미넌스의 국산화 압력, 조달청의 국산 우대 정책 &mdash; 이 세 가지가 맞물리면서 DJI의 공공시장 점유율에 <strong>구조적 균열</strong>이 생기기 시작했다.</p>
+<p><em>[출처: S-45, S-33]</em></p>
+
+<hr/>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<h2 class="chapter" id="ch10"><span class="ch-num">CHAPTER X</span>여덟 번째 문 &mdash; 중국산, 그러나 DJI가 아닌 드론</h2>
+
+<p>지금까지의 데이터를 읽은 사람이라면, 자연스럽게 하나의 생각에 도달한다.</p>
+
+<blockquote>
+<p><em>&ldquo;DJI가 88%를 먹고 있다. DJI에 정책 역풍이 불고 있다. 그렇다면, DJI가 아닌 다른 중국산 드론을 들여오면 되지 않는가?&rdquo;</em></p>
+<p>논리적이다. 그리고 <strong>위험하다.</strong></p>
+</blockquote>
+
+<h3>유혹의 구조</h3>
+
+<p>DJI의 총판은 이미 대원CTS·대동·게이트비전 등이 잡고 있다. 들어갈 자리가 없다. 그러나 중국에는 DJI 말고도 드론을 만드는 회사가 있다.</p>
+
+<div class="table-wrap"><table>
+<thead><tr><th>제조사</th><th>본거지</th><th>주력</th><th>한국 현황</th></tr></thead>
+<tbody>
+<tr><td><strong>XAG (극비/极飞)</strong></td><td>광저우</td><td>농업드론, 중국 2위</td><td>진출 이력, 점유율 미미</td></tr>
+<tr><td><strong>Autel Robotics</strong></td><td>선전</td><td>산업/촬영용</td><td>일부 유통, <strong>FCC 등재</strong></td></tr>
+<tr><td>EHang</td><td>광저우</td><td>도심항공(UAM)</td><td>파트너십 일부</td></tr>
+<tr><td>JOUAV</td><td>청두</td><td>고정익 측량</td><td>거의 없음</td></tr>
+<tr><td>MMC / EWATT</td><td>선전/우한</td><td>산업용 특수</td><td>거의 없음</td></tr>
+<tr><td>EAVISION (翼飞)</td><td>항저우</td><td>농업 방제</td><td>거의 없음</td></tr>
+</tbody>
+</table></div>
+
+<p>DJI보다 싸다. 총판 자리가 비어 있다. 한국에서 아무도 팔고 있지 않다. <strong>그래서 기회처럼 보인다. 그러나 이것은 함정 안의 함정이다.</strong></p>
+
+<hr/>
+
+<h3>리스크 1. &ldquo;중국산&rdquo;이라는 라벨</h3>
+
+<p>K-드론 도미넌스의 K-MOSA 인증, Green/Blue-UAS 기준은 <strong>&ldquo;DJI&rdquo;를 배제하는 것이 아니라 &ldquo;비인증 외국산&rdquo;을 배제하는 구조</strong>다.</p>
+
+<p>핵심은 <strong>국산화율</strong>이다. FC, GPS, 모터, 배터리, 조종기, 카메라 &mdash; 6대 핵심부품의 원산지를 본다. DJI든 XAG든 JOUAV든, 중국 선전에서 조립되어 나오는 드론은 국산화율이 <strong>0%</strong>다.</p>
+
+<p>2026년 3월 국방부 드론작전사 보안 스캔들에서 문제가 된 것은 &ldquo;DJI&rdquo;라는 브랜드가 아니었다. <strong>&ldquo;중국산 비행제어장치(FC)&rdquo;</strong> 자체였다. 이 우려는 DJI에도 XAG에도 동일하게 적용된다.</p>
+
+<div class="figure">
+  <div class="fig-label">FIGURE 05 &middot; RISK MATRIX</div>
+  <h3>비DJI 중국산 드론의 5대 리스크</h3>
+  <div class="bar-chart">
+    <div class="bar-row"><div class="bar-label">정책 리스크</div><div style="flex:1"><div class="bar-text">K-MOSA 인증 &middot; 국산화율 0% &middot; &ldquo;중국산&rdquo; = &ldquo;DJI&rdquo; 동급</div><div class="bar-track"><div class="bar-fill" style="width:90%"></div></div></div></div>
+    <div class="bar-row"><div class="bar-label">시장 경쟁</div><div style="flex:1"><div class="bar-text">DJI 88% 지배 &middot; 브랜드 인지도 제로 &middot; 양면 전쟁</div><div class="bar-track"><div class="bar-fill" style="width:95%"></div></div></div></div>
+    <div class="bar-row"><div class="bar-label">A/S 부재</div><div style="flex:1"><div class="bar-text">부품 재고 0 &middot; 수리 기술자 0 &middot; 본사 반송 1개월+</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></div></div>
+    <div class="bar-row"><div class="bar-label">진입 장벽</div><div style="flex:1"><div class="bar-text">KAMICO 미등재 &middot; 융자 불가 &middot; 사후관리업 미등록</div><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div></div></div>
+    <div class="bar-row"><div class="bar-label">지정학</div><div style="flex:1"><div class="bar-text">미·중 갈등 확대 &middot; FCC Covered List &middot; 동맹 압력</div><div class="bar-track"><div class="bar-fill" style="width:75%"></div></div></div></div>
+  </div>
+  <div class="caption">Autel은 DJI와 함께 FCC Covered List에 등재. 비DJI 중국산도 DJI의 보안 검증(OnDefend 독립 평가) 이력조차 없어 불리.</div>
+</div>
+
+<h3>리스크 2. DJI의 88%와 양면 전쟁</h3>
+
+<p>비DJI 중국산을 한국에 들여오면, 정책 역풍은 DJI와 <strong>동일하게</strong> 맞으면서, DJI의 브랜드·유통·A/S 파워와도 <strong>싸워야</strong> 한다.</p>
+
+<p>한국 농업인이 아는 드론 브랜드는 하나다. <strong>DJI Agras</strong>. 지역 농업기술센터장이 &ldquo;그거 뭡니까?&rdquo;라고 물으면, 그 순간 신뢰는 끝난다. KAMICO 목록집에도 DJI는 이미 등재되어 있다. 새로운 중국산 기종은 <strong>처음부터 등재 심사를 밟아야</strong> 한다.</p>
+
+<h3>리스크 3. A/S 인프라 &mdash; DJI보다 훨씬 취약</h3>
+
+<div class="cycle-box">
+  <div class="cycle-arrows">
+    비DJI 중국산 <strong>구매</strong> → 고장 → A/S 거점 <strong>없음</strong> → 중국 반송 <strong>1개월+</strong><br/>
+    → 농번기 놓침 → <strong>방치</strong> → 폐기 → &ldquo;다시는 안 산다&rdquo;
+  </div>
+</div>
+
+<p>DJI는 그나마 대원CTS·대동 등 총판 네트워크가 전국에 A/S 거점을 갖고 있다. 비DJI 중국산은 한국 내 부품 재고가 없고, 공인 수리 기술자가 없고, 한국어 매뉴얼이 없다. 한전의 52대 유휴, 대구경찰의 1회 사용 후 폐기 &mdash; 이 패턴이 비DJI 중국산에서는 <strong>더 빠르게, 더 심하게</strong> 발생한다.</p>
+
+<h3>리스크 4. 가격 경쟁력의 함정</h3>
+
+<div class="table-wrap"><table>
+<thead><tr><th>비교</th><th>DJI Agras</th><th>비DJI 중국산</th></tr></thead>
+<tbody>
+<tr><td><strong>가격</strong></td><td>1,600~2,000만원</td><td>1,200~1,500만원 (추정)</td></tr>
+<tr><td><strong>KAMICO 등재</strong></td><td>등재 완료</td><td><strong>미등재 → 융자 불가</strong></td></tr>
+<tr><td><strong>A/S 거점</strong></td><td>전국 총판 네트워크</td><td><strong>없음</strong></td></tr>
+<tr><td><strong>농업인 인지도</strong></td><td>&ldquo;다 아는 DJI&rdquo;</td><td>&ldquo;그게 뭡니까?&rdquo;</td></tr>
+<tr><td><strong>조달청 혜택</strong></td><td>없음 (외국산)</td><td>없음 (외국산)</td></tr>
+</tbody>
+</table></div>
+
+<p>KAMICO 미등재 상태에서는 <strong>융자 자체가 불가능</strong>하다. 1,200만원을 현금으로 내고 모르는 브랜드의 중국산 드론을 살 농업인은 없다. 조달청은 국산에만 <strong>25% 이윤율을 보장</strong>한다.</p>
+
+<h3>리스크 5. 지정학적 불확실성</h3>
+
+<p>미·중 기술 갈등은 반도체에서 드론으로 확대되고 있다. 미국 Countering CCP Drones Act(2025~2026년 반복 발의), 한국에 대한 동맹 차원 중국산 드론 제한 요청 가능성. DJI는 독립 보안평가(OnDefend)에서 중대·고위험 취약점 미발견이라는 결과를 갖고 있다. <strong>비DJI 중국산에는 이런 독립 검증 이력조차 없다.</strong></p>
+
+<hr/>
+
+<h3>그럼에도 문이 열리는 곳</h3>
+
+<p>모든 리스크를 인정한 위에서, 비DJI 중국산이 틈을 낼 수 있는 영역이 <strong>세 곳</strong> 있다.</p>
+
+<div class="figure">
+  <div class="fig-label">FIGURE 06 &middot; VIABLE PATHS</div>
+  <h3>비DJI 중국산 드론의 진입 가능 경로</h3>
+  <div class="gates-flow" style="grid-template-columns: repeat(3, 1fr);">
+    <div class="gate-card"><span class="gn">PATH 01</span><b>고중량 틈새</b><div class="amt">소방·산림</div><span>DJI 제품 부재<br/>전액 유찰 = 공급자 제로<br/>성능 증명 시 원산지 장벽↓</span></div>
+    <div class="gate-card"><span class="gn">PATH 02</span><b>서비스 모델</b><div class="amt">방제 용역</div><span>ha당 12~30만원<br/>기체 브랜드 무관<br/>연 1,050~1,400억 잠재</span></div>
+    <div class="gate-card"><span class="gn">PATH 03</span><b>특수 점검</b><div class="amt">공기업 자체조달</div><span>한전·가스공사<br/>기능 중심 평가<br/>보안 이슈는 변수</span></div>
+  </div>
+  <div class="caption">범용 농업 시장(KAMICO 루트)은 극히 어려움. DJI가 없는 곳, 기체가 아닌 서비스, 기능 중심 평가 영역에서 가능성.</div>
+</div>
+
+<p><strong>산림청의 전액 유찰</strong>이 핵심이다. 대당 6,000만원 이상의 고성능 산불 진화 드론 &mdash; DJI도 국산도 채우지 못한 공백. 중국에 25kg급 이상 대형 진화 드론 제조사가 있다면, 이 시장을 선점할 수 있다.</p>
+
+<p><strong>방제 서비스 시장</strong>에서는 기체 브랜드보다 운용 효율이 경쟁력이다. 농업인은 방제 결과만 보지, 드론이 DJI인지 XAG인지 묻지 않는다.</p>
+
+<h3>전략적 판단</h3>
+
+<div class="table-wrap"><table>
+<thead><tr><th>경로</th><th>가능성</th><th>핵심 조건</th></tr></thead>
+<tbody>
+<tr><td><strong>범용 농업 (KAMICO)</strong></td><td><strong>극히 어려움</strong></td><td>A/S 구축 + KAMICO 등재 + 브랜드 인지도 동시 해결 필요</td></tr>
+<tr><td><strong>소방/산림 고중량</strong></td><td><strong>가능성 있음</strong></td><td>DJI 부재 영역, 성능 입증 시 원산지 장벽 낮음</td></tr>
+<tr><td><strong>방제 서비스 (B2B)</strong></td><td><strong>현실적</strong></td><td>기체 직판이 아닌 서비스 용역, 브랜드 무관</td></tr>
+<tr><td><strong>공기업 특수 점검</strong></td><td><strong>선별적 가능</strong></td><td>자체 조달로 절차 단순, 보안 이슈는 변수</td></tr>
+</tbody>
+</table></div>
+
+<blockquote>
+<p><strong>비DJI 중국산 드론을 한국에서 범용 유통하는 것은 &ldquo;DJI의 정책 리스크를 피하는 대신, DJI의 시장 지배력이라는 더 큰 벽에 부딪히는&rdquo; 구조다.</strong></p>
+<p>돌파구는 <strong>기체 판매가 아닌 서비스 판매</strong>, 또는 <strong>DJI가 커버하지 못하는 고중량·특수 영역</strong>이다.</p>
+<p>그리고 어떤 경로를 택하든: <strong>한국 내 A/S 체계를 먼저 구축하라.</strong> 이것이 이 시장의 진짜 입장료다.</p>
+</blockquote>
+
+<hr/>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<h2 class="chapter" id="ch11"><span class="ch-num">결론</span>네 문장</h2>
+
+<blockquote>
+<p><strong>첫째,</strong> 한국 공공 드론 시장은 연 2,000~3,000억원이며 K-드론 도미넌스로 5년 내 연 4,000억원으로 확대된다.</p>
+<p><strong>둘째,</strong> 이 시장의 본질적 문제는 &ldquo;기체가 없어서&rdquo;가 아니라 &ldquo;기체를 사고 나서&rdquo; 벌어진다 &mdash; 교육·운용·A/S의 공백. DaaS 모델이 답이다.</p>
+<p><strong>셋째,</strong> 비DJI 중국산 드론의 범용 유통은 정책 리스크와 시장 지배력의 양면 역풍을 맞는다. 진입 가능한 경로는 <strong>서비스 모델</strong> 또는 <strong>DJI 부재 틈새(고중량·특수)</strong>로 한정된다.</p>
+<p><strong>넷째,</strong> 2025~2027년은 교체 수요 + 정책 수요 + 법제 변화가 동시에 겹치는 <strong>최적의 진입 시점</strong>이다. 어떤 기체를 들여오든, A/S 체계와 KAMICO 등재가 첫 번째 열쇠다.</p>
+</blockquote>
+
+<hr/>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<h2 class="chapter" id="appendix"><span class="ch-num">부록</span>부록</h2>
+
+<h3>A. 원본 파일 (10건)</h3>
+<p>저장 위치: <code>조사자료/01_공식통계_공공데이터/원본PDF/</code></p>
+<div class="table-wrap"><table class="compact">
+<thead><tr><th>#</th><th>자료명</th><th>파일명</th><th>출처</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>KAMICO 정부지원 목록집 (2026.01.01)</td><td>KAMICO_정부지원목록집_2026.pdf</td><td>kamico.or.kr</td></tr>
+<tr><td>2</td><td>KAMICO 부록 (2026.01.01)</td><td>KAMICO_부록_2026.pdf</td><td>kamico.or.kr</td></tr>
+<tr><td>3</td><td>드론산업실태조사 2025</td><td>KIAST_드론산업실태조사_2025.pdf</td><td>kiast.or.kr</td></tr>
+<tr><td>4</td><td>드론산업실태조사 2024</td><td>KIAST_드론산업실태조사_2024.pdf</td><td>kiast.or.kr</td></tr>
+<tr><td>5</td><td>드론산업실태조사 2023</td><td>KIAST_드론산업실태조사_2023.pdf</td><td>kiast.or.kr</td></tr>
+<tr><td>6</td><td>드론산업실태조사 2022</td><td>KIAST_드론산업실태조사_2022.pdf</td><td>kiast.or.kr</td></tr>
+<tr><td>7</td><td>소방청 통계연보 2025</td><td>소방청_통계연보_2025.pdf</td><td>nfa.go.kr</td></tr>
+<tr><td>8</td><td>경찰청 예산개요 2026</td><td>2026년_경찰청_예산개요.pdf</td><td>police.go.kr</td></tr>
+<tr><td>9</td><td>드론현황 CSV (2025.08)</td><td>한국교통안전공단_드론현황_20250831.csv</td><td>data.go.kr</td></tr>
+<tr><td>10</td><td>소방장비·시설현황 CSV (2019.12)</td><td>소방청_소방장비및시설현황_20191231.csv</td><td>data.go.kr</td></tr>
+</tbody>
+</table></div>
+
+<h3>B. 분석 자료 &mdash; Tier별 정렬 (25건)</h3>
+
+<h4>Tier 1 — 국감·공식통계 (10건)</h4>
+<div class="table-wrap"><table class="compact">
+<thead><tr><th>ID</th><th>제목</th><th>핵심 수치</th></tr></thead>
+<tbody>
+<tr><td>S-42</td><td>드론등록현황 70,725대</td><td>등록 7만대, 산업매출 1조993억</td></tr>
+<tr><td>S-44</td><td>공공데이터포털 드론현황 CSV</td><td>연간 기체신고 4,046건</td></tr>
+<tr><td>S-07</td><td>정희용 — 5년 중국산 177억</td><td>중국산 88.2%, 5년 200.8억</td></tr>
+<tr><td>S-06</td><td>서천호 — 융자 국산/중국산 비율</td><td>국산화율 80%+ 단 9개(11.1%)</td></tr>
+<tr><td>S-05</td><td>이병진 — 시도별 농업드론 2,910대</td><td>전남 833대(28.6%)</td></tr>
+<tr><td>S-38</td><td>소방드론 694대 기종별분포</td><td>4종 65%, 고중량 12%</td></tr>
+<tr><td>S-28</td><td>박정현 — 소방드론 운용현황</td><td>출동 4,623건, 5년 13,810건</td></tr>
+<tr><td>S-39</td><td>산림청 196억 전액 유찰</td><td>45대 27억, 전액 미집행</td></tr>
+<tr><td>S-34</td><td>드론실증도시 성과부진</td><td>113억 투자, 매출 1.01억</td></tr>
+<tr><td>S-30</td><td>조달청 드론 방치·폐기</td><td>2.25억 5기, 내용연수 4년</td></tr>
+</tbody>
+</table></div>
+
+<h4>Tier 2 — 조달·게이트키퍼 (4건)</h4>
+<div class="table-wrap"><table class="compact">
+<thead><tr><th>ID</th><th>제목</th><th>핵심 수치</th></tr></thead>
+<tbody>
+<tr><td>S-35</td><td>KAMICO 게이트키퍼</td><td>목록집 2026, 미등재=진입불가</td></tr>
+<tr><td>S-36</td><td>융자·보조금 구조</td><td>대당 1,639만원, 보조70%+자담30%</td></tr>
+<tr><td>S-37</td><td>나라장터 실시간 입찰</td><td>전남소방 3.34억, 낙찰하한 84.245%</td></tr>
+<tr><td>S-43</td><td>드론산업실태조사 보고서 목록</td><td>KIAST 연간 발행 2022~2025</td></tr>
+</tbody>
+</table></div>
+
+<h4>Tier 3 — 정책·기관 발표 (8건)</h4>
+<div class="table-wrap"><table class="compact">
+<thead><tr><th>ID</th><th>제목</th><th>핵심 수치</th></tr></thead>
+<tbody>
+<tr><td>S-15</td><td>K-드론 도미넌스 10대과제</td><td>5년 2조원, 전략추진단</td></tr>
+<tr><td>S-31</td><td>소방장비관리법 개정</td><td>3단계 검증, 성능중심 전환</td></tr>
+<tr><td>S-17</td><td>국방부 부품 국산화</td><td>330억, 6종 부품, 대당 260만</td></tr>
+<tr><td>S-41</td><td>경찰청 드론 운용계획</td><td>32억(+57%), 47대</td></tr>
+<tr><td>S-32</td><td>고중량 소방드론 R&D</td><td>115억(3년), 2025.7 사업자선정</td></tr>
+<tr><td>S-40</td><td>산림청 추경</td><td>4,407억, 드론45대</td></tr>
+<tr><td>S-27</td><td>소방드론 출동 4,623건</td><td>676대(2024말), 3년 2.7배</td></tr>
+<tr><td>S-19</td><td>조달청 국산화 지원</td><td>이윤율 25%, 하자 2년</td></tr>
+</tbody>
+</table></div>
+
+<h4>Tier 4~5 — 업체·동향 (3건)</h4>
+<div class="table-wrap"><table class="compact">
+<thead><tr><th>ID</th><th>제목</th><th>핵심 수치</th></tr></thead>
+<tbody>
+<tr><td>S-45</td><td>국산 드론 주요 업체</td><td>에이럭스 650억, 시총 1,967억</td></tr>
+<tr><td>S-29</td><td>소방드론 인력 부족</td><td>전담 54명, 부족 300명+</td></tr>
+<tr><td>S-33</td><td>DJI 보안·FCC 제한</td><td>FCC Covered List, 취약점 미발견</td></tr>
+</tbody>
+</table></div>
+
+<h3>C. 데이터 교차검증 결과</h3>
+<p>본 보고서의 모든 수치는 최소 2개 이상의 독립 출처에서 교차확인되었다.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>항목</th><th>출처 1</th><th>출처 2</th><th>정합</th></tr></thead>
+<tbody>
+<tr><td>등록 70,725대</td><td>S-42 (KIRI/연합뉴스)</td><td>CSV 원본 71,423대(8월)</td><td>시점차 +698</td></tr>
+<tr><td>소방 694대</td><td>S-38 (박정현 의원)</td><td>ONTOLOGY 694대</td><td>일치</td></tr>
+<tr><td>소방 출동 4,623건</td><td>S-27 (연합뉴스)</td><td>S-28 (박정현 의원)</td><td>일치</td></tr>
+<tr><td>농업 중국산 88%</td><td>S-07 (정희용 의원)</td><td>S-06 (서천호 의원 88.8%)</td><td>일치</td></tr>
+<tr><td>농업드론 2,910대</td><td>S-05 (이병진 의원)</td><td>ONTOLOGY 2,910대</td><td>일치</td></tr>
+<tr><td>산림청 유찰</td><td>S-39 (송옥주 의원)</td><td>S-40 (추경 편성 확인)</td><td>일치</td></tr>
+<tr><td>K-드론 2조원</td><td>S-15 (국무총리 발표)</td><td>조달청 정책(S-19)</td><td>방향 일치</td></tr>
+</tbody>
+</table></div>
+
+</main>
+
+
+<!-- ═══════════════════════════════════════════════════ -->
+<h2 class="chapter" id="dd-report"><span class="ch-num">부록 D &middot; DUE DILIGENCE</span>실사보고서 &mdash; 北京九州尚阳科技 / 航云智能科技</h2>
+
+<p>본 프로젝트의 출발점이 된 중국 소방장비/드론 업체에 대한 종합 실사(Due Diligence) 결과다. 2026년 6월 4일 Exa MCP 기반 OSINT로 수행.</p>
+
+<h3>종합 판단: NO-GO</h3>
+
+<blockquote>
+<p><strong>이 거래는 심각한 레드플래그가 다수 존재한다.</strong> 총판 계약 진행을 권장하지 않으며, 진행 시 추가적인 현지 실사(현장 방문, 법률 검토)가 반드시 선행되어야 한다.</p>
+</blockquote>
+
+<h3>1. 기업 실체 검증</h3>
+
+<h4>법인 1: 北京九州尚阳科技有限公司</h4>
+<div class="table-wrap"><table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td>설립일</td><td>2006-08-25</td></tr>
+<tr><td>등록자본금</td><td>2,010만 위안 (약 38억원)</td></tr>
+<tr><td>법정대표인</td><td>杨维东 (양웨이동)</td></tr>
+<tr><td>직원 수</td><td>50~99명</td></tr>
+<tr><td>소재지</td><td>北京市 房山区 弘安路87号院9号楼1층101</td></tr>
+<tr><td>경영범위</td><td>맥충기압분무(脉冲气压喷雾) 소화장비 생산</td></tr>
+<tr><td>인증</td><td>국가급 고신기술기업, ISO9001, AAA신용등급</td></tr>
+<tr><td>36氪 기재</td><td>&ldquo;창업 단계&rdquo; (스타트업) &mdash; 소방장비 판매상</td></tr>
+</tbody>
+</table></div>
+
+<h4>법인 2: 航云智能科技(沈阳)有限公司 &mdash; CRITICAL</h4>
+<blockquote>
+<p>Exa MCP 10건 이상 검색에서 기업 등록정보, 웹사이트, 뉴스 등 <strong>일체의 공개 정보를 확인할 수 없음.</strong> 天眼查, 企查查, 공상등기 등에서 해당 법인명으로 검색 결과 없음. <strong>법인 실체가 불분명하다.</strong></p>
+</blockquote>
+
+<h4>브랜드 HTHY &mdash; 상표 도용 의심</h4>
+<p>HTHY는 <strong>상하이증권거래소 상장사 航天环宇(종목코드 688523)의 주식 약칭</strong>이다. 명함 업체와 해당 상장사의 연관성은 확인되지 않았다. 상표 도용 또는 의도적 혼동 유발 가능성.</p>
+
+<h4>핵심 인물: 王军(왕쥔) &mdash; 미확인</h4>
+<p>법정대표인은 <strong>杨维东</strong>이며, 王军은 법정대표인이 아니다. LinkedIn, Baidu, 36氪 등 어디에서도 이 회사와 연결된 王军 부총재 정보를 찾을 수 없었다.</p>
+
+<hr/>
+
+<h3>2. 제품 분석</h3>
+<blockquote>
+<p><strong>핵심 발견: 이 회사는 드론 전문 기업이 아니다.</strong> 주력 사업은 &ldquo;맥충기압분무수총(脉冲气压喷雾水枪)&rdquo; &mdash; 소방용 물안개 소화기이며, 드론은 부수적 파생 제품이다.</p>
+</blockquote>
+
+<div class="table-wrap"><table>
+<thead><tr><th>제품명</th><th>분류</th><th>설명</th></tr></thead>
+<tbody>
+<tr><td>배부식 맥충기압분무수총</td><td>소화기 <strong>(주력)</strong></td><td>배낭형 휴대식 물안개 소화기</td></tr>
+<tr><td>추차식 맥충분무수총</td><td>소화기</td><td>바퀴 달린 이동형 소화 장비</td></tr>
+<tr><td>초고도 이동식 맥충소화시스템</td><td>고층 소방</td><td>고층 건물 화재용 대형 장비</td></tr>
+<tr><td>맥충용 소화탄</td><td>소화탄</td><td>발사식 소화탄</td></tr>
+<tr><td><strong>맥충 탐지타격 일체형 드론</strong></td><td><strong>소방드론</strong></td><td><strong>소화탄 발사 기능 탑재 드론 (부수 제품)</strong></td></tr>
+<tr><td>맥충 탐지타격 일체형 로봇</td><td>소방로봇</td><td>지상형 소방 로봇 (부수 제품)</td></tr>
+</tbody>
+</table></div>
+
+<p>드론 자체 기술력(비행제어/통신/센서) 미확인. CE/FCC/KC 등 해외 인증 보유 여부 미확인. 독자 FC(비행제어기) 개발 여부 불분명.</p>
+
+<hr/>
+
+<h3>3. 한국 진입 인허가 &mdash; 8개 항목 전부 미취득</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>#</th><th>인허가 항목</th><th>관할</th><th>상태</th><th>난이도</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>소방용품 형식승인</td><td>소방청 / KFI</td><td>미취득</td><td><strong>상</strong></td></tr>
+<tr><td>2</td><td>소방용품 성능인증 (드론 탑재)</td><td>소방청 / KFI</td><td>미취득</td><td><strong>상</strong></td></tr>
+<tr><td>3</td><td>소방장비 인증 KFAC</td><td>KTR</td><td>미취득</td><td>중</td></tr>
+<tr><td>4</td><td>드론 안전성 인증 (25kg 초과)</td><td>KIAST</td><td>미취득</td><td><strong>상</strong></td></tr>
+<tr><td>5</td><td>KC 전파적합성 인증</td><td>국립전파연구원</td><td>미취득</td><td>중</td></tr>
+<tr><td>6</td><td>수입 통관</td><td>관세청</td><td>미진행</td><td>중</td></tr>
+<tr><td>7</td><td>조종자격증명</td><td>국토교통부</td><td>해당없음</td><td>하</td></tr>
+<tr><td>8</td><td>전략물자 / 이중용도 확인</td><td>산업통상자원부</td><td>확인 필요</td><td><strong>상</strong></td></tr>
+</tbody>
+</table></div>
+
+<hr/>
+
+<h3>4. 리스크 매트릭스</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>리스크</th><th>등급</th><th>상세</th></tr></thead>
+<tbody>
+<tr><td><strong>법인 2 실체 불분명</strong></td><td><strong>CRITICAL</strong></td><td>航云智能科技(沈阳) 공개정보 전무. 페이퍼컴퍼니 가능성</td></tr>
+<tr><td><strong>HTHY 브랜드 무관성</strong></td><td><strong>CRITICAL</strong></td><td>상장사 航天环宇(688523) 약칭. 명함 업체와 무관한 상표 도용 의심</td></tr>
+<tr><td>핵심 인물 미확인</td><td>HIGH</td><td>王军 부총재 어떤 공개 자료에서도 미확인</td></tr>
+<tr><td>중국산 드론 보안 규제</td><td>HIGH</td><td>한국/미국 중국산 드론 부품 사용 제한 강화</td></tr>
+<tr><td>드론이 주력 제품 아님</td><td>HIGH</td><td>소방수총 회사. 드론 기술력/품질 검증 불가</td></tr>
+<tr><td>한국 인증 전무</td><td>HIGH</td><td>형식승인, 안전성인증, KC인증 전부 미취득. 1년+, 수억원 소요</td></tr>
+<tr><td>영세한 규모</td><td>MEDIUM</td><td>50-99명, 자본금 38억원. 36氪 &lsquo;창업단계&rsquo;</td></tr>
+<tr><td>중국 수출통제</td><td>MEDIUM</td><td>양용물항 관리조례. 부품 수급 불확실</td></tr>
+<tr><td>A/S 인프라 부재</td><td>MEDIUM</td><td>한국 내 수리/부품 공급망 전무</td></tr>
+</tbody>
+</table></div>
+
+<hr/>
+
+<h3>5. No-Go 판단 근거 7가지</h3>
+<ol>
+<li>명함 기재 2개 법인 중 1개(航云智能科技)의 <strong>실체가 확인되지 않음</strong></li>
+<li>HTHY 브랜드가 상장사 航天环宇(688523) 상표와 혼동 &mdash; <strong>상표권 리스크</strong></li>
+<li>명함의 王军 부총재를 <strong>공개 자료에서 확인 불가</strong></li>
+<li>드론이 주력 제품이 아닌 <strong>소방수총 회사</strong>. 드론 기술력 검증 불가</li>
+<li>한국 정부의 <strong>중국산 드론 규제 강화</strong> 추세로 공공기관 납품 사실상 차단</li>
+<li>한국 내 인허가 <strong>8개 항목 전부 미취득</strong>. 취득에 1년+ 및 수억원 소요</li>
+<li>영세한 기업규모 (50-99명, 자본금 38억원)</li>
+</ol>
+
+<h3>만약 진행한다면 &mdash; 최소 조건 8가지</h3>
+<ol>
+<li>航云智能科技(沈阳) <strong>중국 공상국 등기부등본 원본 확인</strong></li>
+<li>HTHY <strong>상표권 법적 사용권한 증빙 서류</strong> 확보</li>
+<li>王军의 <strong>재직증명서, 신분증 사본, 위임장</strong> 확보 (법정대표인 杨维东 서명/날인)</li>
+<li>杨维东 <strong>법정대표인과의 직접 면담</strong></li>
+<li>드론 제품 <strong>실물 데모, 스펙시트, 시험비행 데이터</strong> 확보</li>
+<li>한국 진입 <strong>인허가 비용 분담 조건</strong> 사전 협의</li>
+<li><strong>중국 수출통제 관련 법률 검토</strong> (이중용도 해당 여부)</li>
+<li>한국 소방/드론 <strong>전문 변호사를 통한 총판계약서</strong> 법률 검토</li>
+</ol>
+
+<p><em>실사 원본: 2026년 6월 4일 작성 &middot; Exa MCP 기반 OSINT &middot; 출처 18건</em></p>
+
+<hr/>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<h2 class="chapter" id="evidence-index"><span class="ch-num">EVIDENCE INDEX</span>증적 자료 파일링크</h2>
+
+<p>아래 모든 링크는 <strong>상대경로</strong>입니다. 이 폴더를 통째로 복사하면 모든 링크가 작동합니다.</p>
+
+
+<h3>공식통계 · 공공데이터</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>ID</th><th>문서</th></tr></thead>
+<tbody>
+<tr><td><code>S-42</code> </td><td><a href="조사자료/01_공식통계_공공데이터/S-42_드론등록현황_70725대_중량별용도별_2025.07.html">S-42 드론등록현황 70725대 중량별용도별 2025.07</a></td></tr><tr><td><code>S-43</code> </td><td><a href="조사자료/01_공식통계_공공데이터/S-43_드론산업실태조사_보고서_목록_출처.html">S-43 드론산업실태조사 보고서 목록 출처</a></td></tr><tr><td><code>S-44</code> </td><td><a href="조사자료/01_공식통계_공공데이터/S-44_공공데이터포털_드론현황CSV_교통안전공단.html">S-44 공공데이터포털 드론현황CSV 교통안전공단</a></td></tr><tr><td><code>S-45</code> </td><td><a href="조사자료/01_공식통계_공공데이터/S-45_국산드론업체_에이럭스_KAI_LIG_파블로_볼로랜드.html">S-45 국산드론업체 에이럭스 KAI LIG 파블로 볼로랜드</a></td></tr>
+</tbody>
+</table></div>
+
+<h3>국정감사 · 의원실자료</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>ID</th><th>문서</th></tr></thead>
+<tbody>
+<tr><td><code>S-05</code> </td><td><a href="조사자료/02_국정감사_의원실자료/S-05_이병진의원_시도별농업드론보유대수_농민신문.html">S-05 이병진의원 시도별농업드론보유대수 농민신문</a></td></tr><tr><td><code>S-06</code> </td><td><a href="조사자료/02_국정감사_의원실자료/S-06_서천호의원_융자지원_국산중국산비율표_축산경제신문.html">S-06 서천호의원 융자지원 국산중국산비율표 축산경제신문</a></td></tr><tr><td><code>S-07</code> </td><td><a href="조사자료/02_국정감사_의원실자료/S-07_정희용의원_5년간_중국산177억_동아일보.html">S-07 정희용의원 5년간 중국산177억 동아일보</a></td></tr>
+</tbody>
+</table></div>
+
+<h3>정책 · 전략문서</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>ID</th><th>문서</th></tr></thead>
+<tbody>
+<tr><td><code>S-15</code> </td><td><a href="조사자료/05_정책_전략문서/S-15_K드론도미넌스_10대추진과제_로봇신문.html">S-15 K드론도미넌스 10대추진과제 로봇신문</a></td></tr><tr><td><code>S-17</code> </td><td><a href="조사자료/05_정책_전략문서/S-17_국방부_드론핵심부품_국산화_정책브리핑.html">S-17 국방부 드론핵심부품 국산화 정책브리핑</a></td></tr><tr><td><code>S-19</code> </td><td><a href="조사자료/05_정책_전략문서/S-19_조달청_공공드론_국산화지원방안_아시아경제.html">S-19 조달청 공공드론 국산화지원방안 아시아경제</a></td></tr>
+</tbody>
+</table></div>
+
+<h3>지자체 · 현장자료</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>ID</th><th>문서</th></tr></thead>
+<tbody>
+<tr><td><code>S-39</code> </td><td><a href="조사자료/06_지자체_현장자료/S-39_산림청_드론헬기_196억_유찰_2025국감.html">S-39 산림청 드론헬기 196억 유찰 2025국감</a></td></tr><tr><td><code>S-40</code> </td><td><a href="조사자료/06_지자체_현장자료/S-40_산림청_2025추경_4407억_드론45대.html">S-40 산림청 2025추경 4407억 드론45대</a></td></tr><tr><td><code>S-41</code> </td><td><a href="조사자료/06_지자체_현장자료/S-41_경찰청_드론_32억_47대_2025운용계획.html">S-41 경찰청 드론 32억 47대 2025운용계획</a></td></tr>
+</tbody>
+</table></div>
+
+<h3>소방드론 · 안전</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>ID</th><th>문서</th></tr></thead>
+<tbody>
+<tr><td><code>S-27</code> </td><td><a href="조사자료/07_소방드론/S-27_소방드론_676대_출동4623건_연합뉴스.html">S-27 소방드론 676대 출동4623건 연합뉴스</a></td></tr><tr><td><code>S-28</code> </td><td><a href="조사자료/07_소방드론/S-28_박정현의원_소방드론운용현황_국감_경인매일.html">S-28 박정현의원 소방드론운용현황 국감 경인매일</a></td></tr><tr><td><code>S-29</code> </td><td><a href="조사자료/07_소방드론/S-29_소방드론_인력부족_전담54명_FPN119.html">S-29 소방드론 인력부족 전담54명 FPN119</a></td></tr><tr><td><code>S-30</code> </td><td><a href="조사자료/07_소방드론/S-30_조달청_드론_2억2500만원_방치폐기_헤럴드.html">S-30 조달청 드론 2억2500만원 방치폐기 헤럴드</a></td></tr><tr><td><code>S-31</code> </td><td><a href="조사자료/07_소방드론/S-31_소방장비관리법_개정_첨단장비법제화_2026.html">S-31 소방장비관리법 개정 첨단장비법제화 2026</a></td></tr><tr><td><code>S-32</code> </td><td><a href="조사자료/07_소방드론/S-32_고중량소방드론_국산개발_115억_국토부.html">S-32 고중량소방드론 국산개발 115억 국토부</a></td></tr><tr><td><code>S-33</code> </td><td><a href="조사자료/07_소방드론/S-33_DJI보안_FCC리스트_중국산제한_에포크타임스.html">S-33 DJI보안 FCC리스트 중국산제한 에포크타임스</a></td></tr><tr><td><code>S-34</code> </td><td><a href="조사자료/07_소방드론/S-34_드론실증도시_100억_성과부진_국감_조세일보.html">S-34 드론실증도시 100억 성과부진 국감 조세일보</a></td></tr><tr><td><code>S-38</code> </td><td><a href="조사자료/07_소방드론/S-38_소방드론_694대_기종별분포_2025.html">S-38 소방드론 694대 기종별분포 2025</a></td></tr>
+</tbody>
+</table></div>
+
+<h3>조달구조 · 제도</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>ID</th><th>문서</th></tr></thead>
+<tbody>
+<tr><td><code>S-35</code> </td><td><a href="조사자료/08_조달구조_제도/S-35_KAMICO_농기계목록집_게이트키퍼.html">S-35 KAMICO 농기계목록집 게이트키퍼</a></td></tr><tr><td><code>S-36</code> </td><td><a href="조사자료/08_조달구조_제도/S-36_융자구조_보조금비율_실제지침.html">S-36 융자구조 보조금비율 실제지침</a></td></tr><tr><td><code>S-37</code> </td><td><a href="조사자료/08_조달구조_제도/S-37_나라장터_실시간입찰_2026년6월.html">S-37 나라장터 실시간입찰 2026년6월</a></td></tr>
+</tbody>
+</table></div>
+
+<h3>교차분석 · 온톨로지</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>ID</th><th>문서</th></tr></thead>
+<tbody>
+<tr><td></td><td><a href="조사자료/00_공공드론_전체지형도.html">00 공공드론 전체지형도</a></td></tr><tr><td></td><td><a href="조사자료/00_교차분석_인텔리전스.html">00 교차분석 인텔리전스</a></td></tr><tr><td></td><td><a href="조사자료/99_미확보_결정적자료_확보경로.html">99 미확보 결정적자료 확보경로</a></td></tr><tr><td></td><td><a href="조사자료/ONTOLOGY.html">ONTOLOGY</a></td></tr>
+</tbody>
+</table></div>
+
+<h3>산출물 · 프로토콜</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>ID</th><th>문서</th></tr></thead>
+<tbody>
+<tr><td></td><td><a href="산출물/EFP_검증보고서.html">EFP 검증보고서</a></td></tr><tr><td></td><td><a href="산출물/Evidence-First_Protocol_EFP.html">Evidence-First Protocol EFP</a></td></tr><tr><td></td><td><a href="산출물/양질의자료_검색방법론.html">양질의자료 검색방법론</a></td></tr><tr><td></td><td><a href="산출물/지자체_드론보급_조사계획서.html">지자체 드론보급 조사계획서</a></td></tr><tr><td></td><td><a href="산출물/지자체_드론보급_현황보고서.html">지자체 드론보급 현황보고서</a></td></tr><tr><td></td><td><a href="산출물/한국_드론_공공시장_조사_표준_프로토콜.html">한국 드론 공공시장 조사 표준 프로토콜</a></td></tr>
+</tbody>
+</table></div>
+
+<h3>기타 보고서</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>ID</th><th>문서</th></tr></thead>
+<tbody>
+<tr><td></td><td><a href="한국_농업용드론_경쟁력분석보고서.html">한국 농업용드론 경쟁력분석보고서</a></td></tr>
+</tbody>
+</table></div>
+
+<h3>원본 파일 (PDF · CSV)</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>형식</th><th>파일</th></tr></thead>
+<tbody>
+<tr><td><code>.PDF</code></td><td><a href="한국_농업용드론_경쟁력분석보고서.pdf">한국_농업용드론_경쟁력분석보고서.pdf</a></td></tr><tr><td><code>.PDF</code></td><td><a href="실사보고서_북경구주상양과기_항운지능과기.pdf">실사보고서_북경구주상양과기_항운지능과기.pdf</a></td></tr><tr><td><code>.PDF</code></td><td><a href="조사자료/01_공식통계_공공데이터/원본PDF/2026년_경찰청_예산개요.pdf">2026년_경찰청_예산개요.pdf</a></td></tr><tr><td><code>.PDF</code></td><td><a href="조사자료/01_공식통계_공공데이터/원본PDF/KAMICO_부록_2026.pdf">KAMICO_부록_2026.pdf</a></td></tr><tr><td><code>.PDF</code></td><td><a href="조사자료/01_공식통계_공공데이터/원본PDF/KAMICO_정부지원목록집_2026.pdf">KAMICO_정부지원목록집_2026.pdf</a></td></tr><tr><td><code>.PDF</code></td><td><a href="조사자료/01_공식통계_공공데이터/원본PDF/KIAST_드론산업실태조사_2022.pdf">KIAST_드론산업실태조사_2022.pdf</a></td></tr><tr><td><code>.PDF</code></td><td><a href="조사자료/01_공식통계_공공데이터/원본PDF/KIAST_드론산업실태조사_2023.pdf">KIAST_드론산업실태조사_2023.pdf</a></td></tr><tr><td><code>.PDF</code></td><td><a href="조사자료/01_공식통계_공공데이터/원본PDF/KIAST_드론산업실태조사_2024.pdf">KIAST_드론산업실태조사_2024.pdf</a></td></tr><tr><td><code>.PDF</code></td><td><a href="조사자료/01_공식통계_공공데이터/원본PDF/KIAST_드론산업실태조사_2025.pdf">KIAST_드론산업실태조사_2025.pdf</a></td></tr><tr><td><code>.PDF</code></td><td><a href="조사자료/01_공식통계_공공데이터/원본PDF/소방청_통계연보_2025.pdf">소방청_통계연보_2025.pdf</a></td></tr><tr><td><code>.CSV</code></td><td><a href="조사자료/01_공식통계_공공데이터/원본PDF/소방청_소방장비및시설현황_20191231.csv">소방청_소방장비및시설현황_20191231.csv</a></td></tr><tr><td><code>.CSV</code></td><td><a href="조사자료/01_공식통계_공공데이터/원본PDF/한국교통안전공단_드론현황_20250831.csv">한국교통안전공단_드론현황_20250831.csv</a></td></tr>
+</tbody>
+</table></div>
+
+<hr/>
+
+<footer class="source-note">
+  본 보고서는 Evidence-First Protocol(EFP)에 따라 작성되었습니다.<br/>
+  모든 수치 뒤에는 출처 코드(S-##)가 있고, 원본 파일이 있습니다.<br/>
+  증적 기반: 원본 10건 &middot; 분석자료 25건 &middot; 교차검증 완료<br/>
+  작성: 주식회사 비주얼센터 권오준 &middot; 2026년 6월
+</footer>
+
+</div>
+</body>
+</html>

@@ -84,9 +84,33 @@ td strong{color:var(--ink)}
 @media(max-width:768px){.page{padding:0 18px 80px}.cover h1{font-size:30px}.snapshot-bar{grid-template-columns:repeat(3,1fr)}.snapshot-bar .m{border-right:1px solid var(--ink-80);border-bottom:1px solid var(--ink-80)}h2.chapter{font-size:26px}table{font-size:13px}th,td{padding:10px 12px}blockquote{margin:40px -18px;padding:28px 24px}}
 @media print{@page{size:A4;margin:20mm}body{background:#fff;font-size:10pt}.page{max-width:none;padding:0}.toc{position:static;display:block;page-break-after:always}.cover{min-height:auto;page-break-after:always}.figure,table,pre,blockquote{break-inside:avoid}h2.chapter{break-after:avoid}.snapshot-bar{grid-template-columns:repeat(6,1fr)}}
 
+#lock-gate{position:fixed;top:0;left:0;width:100%;height:100%;background:var(--ink);z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column}
+#lock-gate .lock-box{text-align:center;max-width:400px;padding:0 28px}
+#lock-gate h2{font-size:28px;font-weight:900;color:#fff;margin-bottom:8px;letter-spacing:-.02em}
+#lock-gate .lock-sub{font-size:14px;color:var(--ink-20);margin-bottom:36px;font-family:'Noto Sans KR',sans-serif}
+#lock-gate input{width:100%;padding:14px 18px;font-size:16px;border:2px solid var(--ink-40);border-radius:6px;background:transparent;color:#fff;font-family:'JetBrains Mono',monospace;letter-spacing:.15em;text-align:center;outline:none;transition:border-color .2s}
+#lock-gate input:focus{border-color:var(--ink-20)}
+#lock-gate input::placeholder{color:var(--ink-40);letter-spacing:.05em;font-family:'Noto Sans KR',sans-serif;font-size:14px}
+#lock-gate .lock-btn{display:inline-block;margin-top:16px;padding:12px 40px;background:#fff;color:var(--ink);font-family:'Noto Sans KR',sans-serif;font-size:14px;font-weight:700;border:none;border-radius:6px;cursor:pointer;letter-spacing:.03em;transition:opacity .2s}
+#lock-gate .lock-btn:hover{opacity:.85}
+#lock-gate .lock-err{color:var(--red);font-size:13px;font-family:'Noto Sans KR',sans-serif;margin-top:14px;min-height:20px}
+#lock-gate .lock-eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.3em;color:var(--ink-40);font-weight:700;text-transform:uppercase;margin-bottom:24px}
+.page-locked .page{display:none}
 </style>
 </head>
-<body>
+<body class="page-locked">
+
+<div id="lock-gate">
+  <div class="lock-box">
+    <div class="lock-eyebrow">CONFIDENTIAL REPORT</div>
+    <h2>6,000억의 구조</h2>
+    <div class="lock-sub">이 보고서는 비밀번호로 보호되어 있습니다</div>
+    <input type="password" id="lock-pw" placeholder="비밀번호를 입력하세요" autocomplete="off" autofocus/>
+    <button class="lock-btn" id="lock-submit">열기</button>
+    <div class="lock-err" id="lock-err"></div>
+  </div>
+</div>
+
 <div class="page">
 <header class="cover">
   <div class="eyebrow">INVESTMENT REPORT &middot; 2026 &middot; KPX DEHUMIDIFICATION CONTAINER</div>
@@ -730,6 +754,32 @@ td strong{color:var(--ink)}
 
 </main>
 </div>
+
+<script>
+(function(){
+  var KEY='kpx_unlocked';
+  if(sessionStorage.getItem(KEY)==='yes'){
+    document.body.classList.remove('page-locked');
+    var g=document.getElementById('lock-gate');if(g)g.style.display='none';
+  }
+  function tryUnlock(){
+    var pw=document.getElementById('lock-pw').value;
+    if(pw==='tlswhfhwlxpr'){
+      document.body.classList.remove('page-locked');
+      document.getElementById('lock-gate').style.display='none';
+      sessionStorage.setItem(KEY,'yes');
+    }else{
+      document.getElementById('lock-err').textContent='비밀번호가 올바르지 않습니다';
+      document.getElementById('lock-pw').value='';
+      document.getElementById('lock-pw').focus();
+    }
+  }
+  var btn=document.getElementById('lock-submit');
+  if(btn)btn.addEventListener('click',tryUnlock);
+  var inp=document.getElementById('lock-pw');
+  if(inp)inp.addEventListener('keydown',function(e){if(e.key==='Enter')tryUnlock();});
+})();
+</script>
 
 <script>
 (function(){

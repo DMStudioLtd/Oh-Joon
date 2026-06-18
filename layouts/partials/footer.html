@@ -3,6 +3,7 @@
   style="border-top:1px solid #D8DDE8; font-family:'Noto Sans KR',sans-serif; color:#7A8698;"
 >
   <div class="mr-auto">
-    &copy; {{- now.Year }} Oh-JOON Lab &middot; 권오준
+    &copy; {{- now.Year }} Oh-JOON Lab &middot;
+    {{- if eq .Language.Lang "ko" }} 권오준{{ else }} Oh-Joon Kwon{{ end }}
   </div>
 </footer>

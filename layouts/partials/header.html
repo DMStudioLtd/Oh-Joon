@@ -6,7 +6,7 @@
     <a
       class="-translate-y-[1px] text-2xl font-medium"
       style="font-family:'Noto Serif KR',Georgia,serif; font-weight:900; letter-spacing:-.02em;"
-      href="{{- `` | absURL -}}"
+      href="{{- `` | absURL -}}{{- .Language.Lang -}}/"
       >{{ site.Title }}</a
     >
   </div>
@@ -33,37 +33,27 @@
   <div
     class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full flex-col justify-center bg-(--bg) pb-16 duration-200 select-none lg:static lg:h-auto lg:flex-row lg:bg-transparent! lg:pb-0 lg:transition-none"
   >
-    {{- $url := .RelPermalink -}}
-    {{- with site.Menus.main -}}
+    <!-- Language Switcher -->
     <nav
-      class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+      class="mt-12 flex justify-center space-x-6 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:lg:mr-14"
+      style="font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.05em;"
     >
-      {{- range . -}}
+      {{- $currentLang := .Language.Lang -}}
+      {{- range hugo.Sites -}}
+      {{- $sLang := .Language.Lang -}}
+      {{- if eq $sLang $currentLang -}}
+      <span style="color:#0A1628; font-weight:700; border-bottom:2px solid #0A1628; padding-bottom:2px;">
+        {{- if eq $sLang "ko" -}}KR{{- else -}}EN{{- end -}}
+      </span>
+      {{- else -}}
       <a
-        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
-        href="{{- .URL -}}"
-        >{{- .Name -}}</a
+        style="color:#7A8698; text-decoration:none; padding-bottom:2px;"
+        href="{{- `/` | absURL -}}{{- $sLang -}}/"
       >
-      {{- end -}}
-    </nav>
-    {{- end -}}
-
-    {{- with $.Scratch.Get "social_list" -}}
-    <nav
-      class="mt-12 flex justify-center space-x-10 lg:mt-0 lg:items-center ltr:lg:ml-14 rtl:space-x-reverse rtl:lg:mr-14"
-    >
-      {{- range . -}}
-      <a
-        class="h-7 w-7 text-[0px] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
-        style="--url: url(./{{- . -}}.svg)"
-        href="{{- if eq . `rss` -}}{{- `index.xml` | absURL -}}{{- else if eq . `mastodon` -}}{{- index site.Params . -}}{{- else -}}{{- if eq . `threads` -}}https://threads.net/{{- else if eq . `bluesky` -}}https://bsky.app/profile/{{- else -}}https://{{- . -}}.com/{{- end -}}{{- if eq . `linkedin` -}}in/{{- end -}}{{- index site.Params . -}}{{- end -}}"
-        target="_blank"
-        rel="{{- if eq . `rss` -}}alternate{{- else -}}me{{- end -}}"
-      >
-        {{- . -}}
+        {{- if eq $sLang "ko" -}}KR{{- else -}}EN{{- end -}}
       </a>
       {{- end -}}
+      {{- end -}}
     </nav>
-    {{- end -}}
   </div>
 </header>

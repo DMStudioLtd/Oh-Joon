@@ -1,25 +1,42 @@
 {{- define "main" -}}
 
 {{- if .IsHome -}}
+
+{{- $lang := .Language.Lang | default "ko" -}}
+{{- $i18n := dict
+  "eyebrow_ko" "Oh-JOON Lab · 기술 리서치 보고서"
+  "eyebrow_en" "Oh-JOON Lab · Research & Technology Reports"
+  "subtitle_ko" "권오준 — 기술 리서치 블로그"
+  "subtitle_en" "Oh-Joon Kwon — Tech Research Blog"
+  "thesis_ko" "실감형 VR 돔 시스템, 프로젝션 매핑, 미디어 아트 등 기술에 대한 글로벌 시장 분석과 도입 검토 보고서를 체계적으로 축적하는 개인 기술 연구 블로그."
+  "thesis_en" "A personal tech research blog — systematically accumulating global market analysis and procurement reports on immersive VR dome systems, projection mapping, and media art technologies."
+  "reports_ko" "발행 보고서"
+  "reports_en" "Published"
+  "since_ko" "시작 연도"
+  "since_en" "Since"
+  "all_ko" "All Reports"
+  "all_en" "All Reports"
+-}}
+
 <!-- ═══ COVER HERO ═══ -->
 <div class="home-cover not-prose">
-  <div class="eyebrow">Oh-JOON Lab · Research &amp; Technology Reports</div>
+  <div class="eyebrow">{{- index $i18n (print "eyebrow_" $lang) -}}</div>
   <h1>Oh-JOON<br/>Lab</h1>
-  <p class="subtitle">권오준 — 기술 리서치 블로그</p>
-  <p class="thesis">실감형 VR 돔 시스템, 프로젝션 매핑, 미디어 아트 등 기술에 대한 글로벌 시장 분석과 도입 검토 보고서를 체계적으로 축적하는 개인 기술 연구 블로그.</p>
+  <p class="subtitle">{{- index $i18n (print "subtitle_" $lang) -}}</p>
+  <p class="thesis">{{- index $i18n (print "thesis_" $lang) -}}</p>
 
+  {{- $reports := index hugo.Data $lang -}}
   <div class="snapshot-bar">
-    <div class="m"><b>{{ len site.Data.reports }}</b><span>발행 보고서</span></div>
-    <div class="m"><b>Hugo</b><span>정적 사이트 엔진</span></div>
-    <div class="m"><b>2026</b><span>시작 연도</span></div>
+    <div class="m"><b>{{ len $reports.reports }}</b><span>{{- index $i18n (print "reports_" $lang) -}}</span></div>
+    <div class="m"><b>2026</b><span>{{- index $i18n (print "since_" $lang) -}}</span></div>
   </div>
 </div>
 
 <!-- ═══ REPORT LIST ═══ -->
 <div class="not-prose">
-  <div class="post-list-heading">All Reports</div>
+  <div class="post-list-heading">{{- index $i18n (print "all_" $lang) -}}</div>
 
-  {{- range site.Data.reports -}}
+  {{- range $reports.reports -}}
   <a class="post-entry" href="{{- .url -}}">
     <div class="pe-date">{{- .date -}}</div>
     <div class="pe-title">{{- .title -}}</div>

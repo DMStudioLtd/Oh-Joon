@@ -2,11 +2,24 @@ baseURL = "https://dmstudioltd.github.io/Oh-Joon/"
 title = "Oh-JOON Lab"
 theme = "paper"
 paginate = 20
+defaultContentLanguage = "ko"
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.ko]
+    weight = 1
+    title = "Oh-JOON Lab"
+    [languages.ko.params]
+      subtitle = "권오준 · 기술 리서치 블로그"
+  [languages.en]
+    weight = 2
+    title = "Oh-JOON Lab"
+    [languages.en.params]
+      subtitle = "Oh-Joon Kwon · Tech Research Blog"
 
 [params]
   color = "light"
   github = "DMStudioLtd/Oh-Joon"
-  subtitle = "권오준 · 기술 리서치 블로그"
   mainSections = ["posts"]
 
 [params.comments]

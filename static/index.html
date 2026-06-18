@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Oh-JOON Lab</title>
+<script>
+(function() {
+  var lang = (navigator.language || navigator.userLanguage || 'ko').toLowerCase();
+  var base = '/Oh-Joon/';
+  if (lang.startsWith('ko')) {
+    window.location.replace(base + 'ko/');
+  } else {
+    window.location.replace(base + 'en/');
+  }
+})();
+</script>
+<noscript>
+  <meta http-equiv="refresh" content="0; url=/Oh-Joon/ko/"/>
+</noscript>
+</head>
+<body></body>
+</html>
